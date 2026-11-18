@@ -1,0 +1,91 @@
+{
+  "monthly_mean_by_month": {
+    "1": 202.55,
+    "2": 148.28,
+    "3": 79.79,
+    "4": 68.54,
+    "5": 75.93,
+    "6": 64.73,
+    "7": 42.61,
+    "8": 45.44,
+    "9": 59.52,
+    "10": 136.22,
+    "11": 192.58,
+    "12": 263.68
+  },
+  "peak_month": 12,
+  "peak_month_mean_ugm3": 263.68,
+  "weekday_means_ugm3": {
+    "Mon": 110.04,
+    "Tue": 115.14,
+    "Wed": 122.19,
+    "Thu": 118.24,
+    "Fri": 112.31,
+    "Sat": 110.67,
+    "Sun": 106.17
+  },
+  "max_weekday": "Wed",
+  "min_weekday": "Sun",
+  "weekday_range_ugm3": 16.02,
+  "heatmap_years": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+  ],
+  "heatmap_months": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ],
+  "smog_season_mean_ugm3": 199.74,
+  "off_season_mean_ugm3": 72.2,
+  "smog_vs_offseason_ratio": 2.77,
+  "smog_category_pct": {
+    "Very Unhealthy": 38.9,
+    "Unhealthy": 28.3,
+    "Hazardous": 22.2,
+    "Hazardous+": 5.4,
+    "Unhealthy for Sensitive": 4.2,
+    "Good": 0.7,
+    "Moderate": 0.2
+  },
+  "offseason_category_pct": {
+    "Unhealthy for Sensitive": 43.1,
+    "Unhealthy": 31.0,
+    "Moderate": 13.0,
+    "Very Unhealthy": 9.0,
+    "Good": 2.1,
+    "Hazardous": 1.5,
+    "Hazardous+": 0.2
+  },
+  "weather_correlations": {
+    "temperature_2m_mean": -0.6064,
+    "relative_humidity_2m_mean": 0.229,
+    "wind_speed_10m_max": -0.3792,
+    "precipitation_sum": -0.2069
+  },
+  "strongest_weather_corr_var": "temperature_2m_mean",
+  "strongest_weather_corr_value": -0.6064,
+  "autocorrelations": {
+    "lag1": 0.8523,
+    "lag2": 0.7661,
+    "lag3": 0.7103,
+    "lag4": 0.6847,
+    "lag5": 0.6662,
+    "lag6": 0.6508,
+    "lag7": 0.6444
+  },
+  "autocorr_lag1": 0.8523,
+  "autocorr_lag7": 0.6444
+}

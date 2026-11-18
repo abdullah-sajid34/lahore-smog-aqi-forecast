@@ -25,7 +25,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-# Allow running as a script from the project root
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.config import (
@@ -52,13 +51,8 @@ def aqi_to_pm25_ugm3(aqi_series: pd.Series) -> pd.Series:
     Formula (US EPA, Appendix A of AQI Technical Assistance Document):
         Cp = (Cp_hi - Cp_lo) / (I_hi - I_lo) * (I_p - I_lo) + Cp_lo
 
-    where I_p is the AQI value and [I_lo, I_hi], [Cp_lo, Cp_hi] are the
-    matching breakpoint pair from AQI_BREAKPOINTS.
-
     For AQI > 500 (off-scale but observed in Lahore November smog), the last
-    segment is extended linearly.  This is the best available approximation
-    because the EPA formula was not defined above 500; we document this in
-    the returned Series name.
+    segment is extended linearly.
     """
     result = pd.Series(index=aqi_series.index, dtype=float, name="pm25_ugm3")
 
@@ -69,7 +63,7 @@ def aqi_to_pm25_ugm3(aqi_series: pd.Series) -> pd.Series:
             + (aqi_series[mask] - I_lo) / (I_hi - I_lo) * (Cp_hi - Cp_lo)
         )
 
-    # Off-scale (AQI > 500): extend last segment
+    # Off-scale (AQI > 500): extend last segment linearly
     last = AQI_BREAKPOINTS[-1]
     I_lo, I_hi, Cp_lo, Cp_hi = last[0], last[1], last[2], last[3]
     off_scale = aqi_series > 500
@@ -80,6 +74,45 @@ def aqi_to_pm25_ugm3(aqi_series: pd.Series) -> pd.Series:
         )
 
     return result.round(2)
+
+
+def _calendar_shift(series: pd.Series, days: int) -> pd.Series:
+    """
+    Shift a daily Series by `days` CALENDAR days, not row positions.
+
+    WHY this matters: after clean() drops long-gap rows the DatetimeIndex is
+    non-contiguous.  pandas .shift(n) moves by row number, so across a gap
+    shift(1) on 2021-07-08 returns the value from 2021-07-03 instead of NaN
+    (2021-07-07 is missing).  That silently smuggles a stale value into the
+    lag feature -- a form of data leakage.
+
+    The fix: reindex to a full daily calendar (introducing NaN for missing
+    dates), shift by row (now equivalent to calendar shift), then reindex
+    back to the original sparse index.  Missing calendar neighbours
+    propagate as NaN, which correctly signals "this lag is unavailable".
+    """
+    full_idx  = pd.date_range(series.index.min(), series.index.max(), freq="D")
+    s_full    = series.reindex(full_idx)          # sparse -> dense, NaN for gaps
+    s_shifted = s_full.shift(days)                # row shift == calendar shift on dense index
+    return s_shifted.reindex(series.index)        # dense -> back to sparse
+
+
+def _calendar_rolling(series: pd.Series, window: int) -> pd.Series:
+    """
+    Rolling mean over a `window`-day CALENDAR window, excluding current day.
+
+    Same gap problem as _calendar_shift: .rolling() on a sparse index counts
+    rows, not days, so a 7-row window after a 10-day gap covers 17 calendar
+    days, mixing old and recent values.
+
+    Fix: densify, shift(1) to exclude current day, roll on the dense series,
+    then reindex back.  Any window that spans a gap will have >= 1 NaN input
+    and will correctly return NaN for the whole window (min_periods=window).
+    """
+    full_idx  = pd.date_range(series.index.min(), series.index.max(), freq="D")
+    s_full    = series.reindex(full_idx)
+    rolled    = s_full.shift(1).rolling(window, min_periods=window).mean()
+    return rolled.reindex(series.index)
 
 
 # ---------------------------------------------------------------------------
@@ -103,8 +136,8 @@ class AirQualityDataset:
         set_seed()
         self.aqi_path     = aqi_path
         self.weather_path = weather_path
-        self.df: pd.DataFrame | None = None   # populated by load()
-        self._cleaning_log: list[str] = []    # human-readable audit trail
+        self.df: pd.DataFrame | None = None
+        self._cleaning_log: list[str] = []
 
     # ------------------------------------------------------------------
     # 1. LOAD
@@ -114,20 +147,12 @@ class AirQualityDataset:
         """
         Read the raw AQI CSV, strip whitespace from column names, parse dates,
         convert AQI -> ug/m3, and merge with weather data.
-
-        WHY strip whitespace: the raw CSV has a leading space in ' pm25'.
-        WHY parse dates here: downstream methods rely on a DatetimeIndex.
         """
-        # --- AQI data ---
         aqi = pd.read_csv(self.aqi_path)
-        aqi.columns = aqi.columns.str.strip()          # ' pm25' -> 'pm25'
-        aqi["date"]  = pd.to_datetime(aqi["date"])     # 'YYYY/M/D' -> Timestamp
+        aqi.columns = aqi.columns.str.strip()
+        aqi["date"]  = pd.to_datetime(aqi["date"])
         aqi = aqi.set_index("date").sort_index()
-
-        # Rename raw column to make its units explicit
         aqi = aqi.rename(columns={"pm25": "pm25_aqi"})
-
-        # Convert AQI -> physical concentration
         aqi["pm25_ugm3"] = aqi_to_pm25_ugm3(aqi["pm25_aqi"])
 
         self._cleaning_log.append(
@@ -135,24 +160,14 @@ class AirQualityDataset:
             f"{aqi.index.min().date()} to {aqi.index.max().date()}"
         )
 
-        # --- Weather data ---
         if self.weather_path.exists():
             weather = pd.read_csv(self.weather_path, parse_dates=["date"], index_col="date")
             weather.index = pd.to_datetime(weather.index)
-
-            # Merge on date index; inner join keeps only dates present in both.
-            # WHY inner: if weather is missing for an AQI date, we cannot
-            # compute weather features for that row anyway.
             self.df = aqi.join(weather, how="inner")
-            self._cleaning_log.append(
-                f"After merge with weather: {len(self.df)} rows"
-            )
+            self._cleaning_log.append(f"After merge with weather: {len(self.df)} rows")
         else:
-            # Weather file not yet downloaded; proceed with AQI only
             self.df = aqi.copy()
-            self._cleaning_log.append(
-                "Weather file not found -- proceeding with AQI data only."
-            )
+            self._cleaning_log.append("Weather file not found -- AQI data only.")
 
         return self
 
@@ -162,33 +177,30 @@ class AirQualityDataset:
 
     def clean(self) -> "AirQualityDataset":
         """
-        1. Remove duplicate dates (keep first occurrence).
-        2. Flag and remove statistical outliers in pm25_ugm3.
-        3. Reindex to a full daily calendar; interpolate gaps <= 3 days;
-           drop rows where the gap exceeds MAX_INTERP_GAP_DAYS.
-        4. Report row count, date range, and missing-day count.
+        1. Remove duplicate dates.
+        2. Remove statistical outliers (IQR * k, lower bound clipped at 0).
+        3. Reindex to full daily calendar; interpolate gaps <= MAX_INTERP_GAP_DAYS;
+           drop rows in longer gaps.
         """
         df = self.df.copy()
         n0 = len(df)
 
-        # -- (a) Duplicate dates --
-        # WHY: duplicates would create multiple rows for the same date,
-        # breaking time-series operations and inflating some lag values.
+        # (a) Duplicates
         dupes = df.index.duplicated(keep="first")
         if dupes.sum():
             df = df[~dupes]
             self._cleaning_log.append(f"Removed {dupes.sum()} duplicate dates.")
 
-        # -- (b) Outlier removal (IQR method on pm25_ugm3) --
-        # WHY IQR with k=3: the distribution is right-skewed; a fixed cap
-        # (e.g., >500 ug/m3) would miss extreme anomalies in summer.
-        # k=3 is conservative: only flags values that are extremely far
-        # from the interquartile range, minimising false positives on
-        # genuine high-smog days.
-        q1 = df["pm25_ugm3"].quantile(0.25)
-        q3 = df["pm25_ugm3"].quantile(0.75)
+        # (b) Outlier removal -- IQR * k on pm25_ugm3
+        # WHY IQR with k=3: conservative, only removes extreme statistical
+        # outliers, not genuine high-smog days.
+        # WHY clip lower at 0: PM2.5 concentration cannot be negative.
+        # The raw lower bound (-342 ug/m3) is a mathematical artefact of the
+        # symmetric IQR formula applied to a right-skewed distribution.
+        q1  = df["pm25_ugm3"].quantile(0.25)
+        q3  = df["pm25_ugm3"].quantile(0.75)
         iqr = q3 - q1
-        lower = q1 - OUTLIER_IQR_K * iqr
+        lower = max(0.0, q1 - OUTLIER_IQR_K * iqr)   # clipped at 0
         upper = q3 + OUTLIER_IQR_K * iqr
         outlier_mask = (df["pm25_ugm3"] < lower) | (df["pm25_ugm3"] > upper)
         n_outliers = outlier_mask.sum()
@@ -197,57 +209,45 @@ class AirQualityDataset:
             self._cleaning_log.append(
                 f"Removed {n_outliers} outlier rows "
                 f"(pm25_ugm3 outside [{lower:.1f}, {upper:.1f}] ug/m3, "
-                f"IQR*{OUTLIER_IQR_K})."
+                f"IQR*{OUTLIER_IQR_K}, lower clipped at 0)."
             )
 
-        # -- (c) Gap handling --
-        # Reindex to a contiguous daily calendar so gaps become explicit NaTs.
+        # (c) Gap handling
         full_index = pd.date_range(df.index.min(), df.index.max(), freq="D")
         df = df.reindex(full_index)
-
-        # Mark which rows are genuinely missing (not just interpolation targets)
         missing_before = df["pm25_ugm3"].isna()
+        gap_lengths    = self._run_lengths(missing_before)
+        too_long       = missing_before & (gap_lengths > MAX_INTERP_GAP_DAYS)
+        n_drop         = too_long.sum()
 
-        # Identify run lengths of consecutive NaNs
-        # WHY max 3 days: gaps of 1-3 days are plausibly sensor downtime and
-        # can be recovered by linear interpolation without introducing much
-        # error. Longer gaps likely reflect data-collection outages and
-        # should be excluded rather than synthesised.
-        gap_lengths = self._run_lengths(missing_before)
-
-        # Mark rows in gaps longer than the threshold for dropping
-        too_long = missing_before & (gap_lengths > MAX_INTERP_GAP_DAYS)
-        n_drop = too_long.sum()
-
-        # Interpolate the short gaps
-        df["pm25_ugm3"] = df["pm25_ugm3"].interpolate(method="time", limit=MAX_INTERP_GAP_DAYS)
-        # Also interpolate pm25_aqi for reference
+        df["pm25_ugm3"] = df["pm25_ugm3"].interpolate(
+            method="time", limit=MAX_INTERP_GAP_DAYS
+        )
         if "pm25_aqi" in df.columns:
-            df["pm25_aqi"] = df["pm25_aqi"].interpolate(method="time", limit=MAX_INTERP_GAP_DAYS)
+            df["pm25_aqi"] = df["pm25_aqi"].interpolate(
+                method="time", limit=MAX_INTERP_GAP_DAYS
+            )
 
-        # Drop the rows that belonged to long gaps
         df = df[~too_long]
         df.index.name = "date"
 
         self._cleaning_log.append(
-            f"Gap interpolation: {missing_before.sum()} missing days in full range; "
-            f"interpolated up to {MAX_INTERP_GAP_DAYS} consecutive days; "
-            f"dropped {n_drop} rows in longer gaps."
+            f"Gap interpolation: {missing_before.sum()} missing days; "
+            f"interpolated <= {MAX_INTERP_GAP_DAYS} days; dropped {n_drop} longer-gap rows."
         )
 
         self.df = df
 
-        # -- Summary report --
         full_range_all = pd.date_range(df.index.min(), df.index.max(), freq="D")
         n_missing = len(full_range_all) - len(df)
         print("=" * 60)
         print("DATASET SUMMARY AFTER CLEANING")
         print("=" * 60)
-        print(f"  Rows before cleaning : {n0}")
-        print(f"  Rows after  cleaning : {len(df)}")
-        print(f"  Date range           : {df.index.min().date()} to {df.index.max().date()}")
-        print(f"  Missing days (dropped): {n_drop}")
-        print(f"  Remaining NaN (pm25) : {df['pm25_ugm3'].isna().sum()}")
+        print(f"  Rows before cleaning  : {n0}")
+        print(f"  Rows after  cleaning  : {len(df)}")
+        print(f"  Date range            : {df.index.min().date()} to {df.index.max().date()}")
+        print(f"  Long-gap rows dropped : {n_drop}")
+        print(f"  Remaining NaN (pm25)  : {df['pm25_ugm3'].isna().sum()}")
         print()
         for msg in self._cleaning_log:
             print(f"  LOG | {msg}")
@@ -257,67 +257,63 @@ class AirQualityDataset:
 
     @staticmethod
     def _run_lengths(mask: pd.Series) -> pd.Series:
-        """
-        For each True position in a boolean Series, return the length of the
-        consecutive True run it belongs to.  False positions get 0.
-
-        Used to distinguish short interpolatable gaps from long data outages.
-        """
-        lengths = pd.Series(0, index=mask.index, dtype=int)
-        run = 0
+        """Return the run-length of the consecutive-True run each True element belongs to."""
+        lengths     = pd.Series(0, index=mask.index, dtype=int)
+        run         = 0
         run_indices = []
         for idx, val in mask.items():
             if val:
                 run += 1
                 run_indices.append(idx)
             else:
-                if run_indices:
-                    for i in run_indices:
-                        lengths[i] = run
-                run = 0
+                for i in run_indices:
+                    lengths[i] = run
+                run         = 0
                 run_indices = []
-        # flush last run
-        if run_indices:
-            for i in run_indices:
-                lengths[i] = run
+        for i in run_indices:
+            lengths[i] = run
         return lengths
 
     # ------------------------------------------------------------------
-    # 3. ADD FEATURES
+    # 3. ADD FEATURES  (calendar-day safe)
     # ------------------------------------------------------------------
 
     def add_features(self) -> "AirQualityDataset":
         """
-        Engineer lag, rolling, and calendar features from pm25_ugm3.
+        Engineer lag, rolling, and calendar features.
 
-        CRITICAL -- no data leakage:
-          - Lag features use .shift(n): row t uses pm25 from t-n, never t.
-          - Rolling features use .shift(1).rolling(w): the window ends at
-            t-1, so the current day's value is excluded.  This matches
-            the real-world forecasting scenario where yesterday's reading
-            is known but today's is the prediction target.
-          - We do NOT call .rolling() directly on the unshifted series.
+        CALENDAR-DAY CORRECTNESS:
+          After clean() drops long-gap rows the index is non-contiguous.
+          Using pandas .shift(n) or .rolling(w) directly on a sparse index
+          operates on ROW POSITIONS, not calendar days.  Across a gap this
+          silently assigns a stale value to a lag feature.
+
+          We use _calendar_shift() and _calendar_rolling() which densify
+          the index to a full daily calendar, perform the operation, then
+          reindex back.  Any lag or window that spans a missing calendar day
+          correctly returns NaN.
+
+        NO LEAKAGE:
+          - pm25_lag{n}  : value at t-n calendar days (never t).
+          - pm25_roll{w} : mean of [t-w-1 .. t-1] calendar days.
+            _calendar_rolling already calls shift(1) before rolling, so
+            the current day is always excluded.
         """
         df = self.df.copy()
+        pm = df["pm25_ugm3"]
 
-        pm = df["pm25_ugm3"]   # shorthand
-
-        # -- Lag features --
+        # Lag features
         for lag in [1, 2, 3, 7]:
-            df[f"pm25_lag{lag}"] = pm.shift(lag)
+            df[f"pm25_lag{lag}"] = _calendar_shift(pm, lag)
 
-        # -- Rolling means (shift first to avoid leakage) --
-        pm_shifted = pm.shift(1)   # yesterday and earlier
-        df["pm25_roll3"] = pm_shifted.rolling(3).mean()
-        df["pm25_roll7"] = pm_shifted.rolling(7).mean()
+        # Rolling means (calendar-aware, current day excluded)
+        df["pm25_roll3"] = _calendar_rolling(pm, 3)
+        df["pm25_roll7"] = _calendar_rolling(pm, 7)
 
-        # -- Calendar features --
+        # Calendar features
         df["month"]          = df.index.month
         df["day_of_year"]    = df.index.day_of_year
         df["day_of_week"]    = df.index.day_of_week
-        # Smog season: October (10) through January (1)
-        # WHY: crop residue burning peaks Oct-Nov; winter thermal inversions
-        # peak Dec-Jan.  This binary flag lets tree models easily split on season.
         df["is_smog_season"] = df.index.month.isin([10, 11, 12, 1]).astype(int)
 
         self.df = df
@@ -329,14 +325,10 @@ class AirQualityDataset:
 
     def time_split(self) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         """
-        Split into train / validation / test sets by time order.
+        Split into train / val / test by time order (never shuffled).
 
-        WHY time-based, not random:
-          Random splits would put future observations into the training set,
-          creating leakage through lag and rolling features.  We always
-          train on the past and evaluate on the future.
-
-        Returns (train_df, val_df, test_df).
+        WHY time-based: random splits leak future lag/rolling values into
+        training data.  We always train on the past, evaluate on the future.
         """
         df = self.df.dropna(subset=["pm25_ugm3"])
         n  = len(df)
@@ -363,7 +355,6 @@ class AirQualityDataset:
     # ------------------------------------------------------------------
 
     def save(self, path: Path = MERGED_CSV) -> None:
-        """Persist the processed DataFrame to CSV."""
         path.parent.mkdir(parents=True, exist_ok=True)
         self.df.to_csv(path)
         print(f"\nSaved merged dataset to {path}")
