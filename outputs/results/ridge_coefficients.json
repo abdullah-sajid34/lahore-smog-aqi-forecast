@@ -1,0 +1,20 @@
+{
+  "alpha": 0.01,
+  "coefficients_scaled": {
+    "pm25_lag1": 36.595866,
+    "pm25_lag2": -1.099603,
+    "pm25_lag3": -4.506196,
+    "pm25_lag4": 1.154855,
+    "pm25_lag5": 1.212303,
+    "pm25_lag6": -1.320046,
+    "pm25_roll7": 27.8366,
+    "temperature_2m_mean": -32.480176,
+    "relative_humidity_2m_mean": -17.430981,
+    "wind_speed_10m_max": -16.386229,
+    "precipitation_sum": -3.962372,
+    "month_sin": -1.091539,
+    "month_cos": 2.021953,
+    "doy_sin": -10.253386,
+    "doy_cos": -6.859169
+  }
+}

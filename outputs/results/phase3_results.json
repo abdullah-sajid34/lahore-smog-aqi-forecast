@@ -1,0 +1,85 @@
+{
+  "split": {
+    "train": "2019-05-09 to 2023-06-10 (1317 rows)",
+    "val": "2023-06-11 to 2024-04-03 (282 rows)",
+    "test": "2024-04-04 to 2025-02-18 (283 rows)"
+  },
+  "best_params": {
+    "ridge_alpha": 0.01,
+    "rf_n_estimators": 300,
+    "rf_max_depth": 8,
+    "rf_min_samples_leaf": 5
+  },
+  "h1": {
+    "Persistence": {
+      "rmse": 68.4641,
+      "mae": 46.8829,
+      "f1": 0.4444,
+      "skill": null
+    },
+    "MovingAverage7": {
+      "rmse": 62.0756,
+      "mae": 43.4188,
+      "f1": 0.4838,
+      "skill": 0.0933
+    },
+    "Ridge": {
+      "rmse": 54.9426,
+      "mae": 37.6598,
+      "f1": 0.3611,
+      "skill": 0.1975
+    },
+    "RandomForest": {
+      "rmse": 55.3823,
+      "mae": 37.716,
+      "f1": 0.4217,
+      "skill": 0.1911
+    },
+    "RF_stability": {
+      "rmse_mean": 55.3467,
+      "rmse_std": 0.1343,
+      "mae_mean": 37.6391,
+      "mae_std": 0.1525,
+      "f1_mean": 0.4186,
+      "f1_std": 0.0077,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    }
+  },
+  "h3": {
+    "Persistence": {
+      "rmse": 74.4174,
+      "mae": 53.2086,
+      "f1": 0.4443,
+      "skill": null
+    },
+    "MovingAverage7": {
+      "rmse": 65.6451,
+      "mae": 45.4633,
+      "f1": 0.4114,
+      "skill": 0.1179
+    },
+    "Ridge": {
+      "rmse": 60.7282,
+      "mae": 40.3862,
+      "f1": 0.3207,
+      "skill": 0.184
+    },
+    "RandomForest": {
+      "rmse": 64.2744,
+      "mae": 42.116,
+      "f1": 0.3754,
+      "skill": 0.1363
+    }
+  }
+}

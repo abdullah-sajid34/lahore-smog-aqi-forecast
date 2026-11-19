@@ -1,0 +1,20 @@
+{
+  "model": "rf_h1",
+  "importances": {
+    "pm25_lag1": 0.105634,
+    "pm25_lag2": 0.008467,
+    "pm25_lag3": 0.00962,
+    "pm25_lag4": 0.00768,
+    "pm25_lag5": 0.009769,
+    "pm25_lag6": 0.008541,
+    "pm25_roll7": 0.64723,
+    "temperature_2m_mean": 0.013562,
+    "relative_humidity_2m_mean": 0.013353,
+    "wind_speed_10m_max": 0.102042,
+    "precipitation_sum": 0.015228,
+    "month_sin": 0.000741,
+    "month_cos": 0.007163,
+    "doy_sin": 0.018358,
+    "doy_cos": 0.032613
+  }
+}

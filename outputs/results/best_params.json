@@ -1,0 +1,193 @@
+{
+  "ridge_h1": {
+    "best_alpha": 0.01,
+    "cv_rmse": 54.7261,
+    "all_scores": {
+      "0.01": 54.7261,
+      "0.1": 54.7429,
+      "1.0": 54.9513,
+      "10.0": 55.7668,
+      "100.0": 55.542
+    }
+  },
+  "rf_h1": {
+    "best_n_estimators": 300,
+    "best_max_depth": 8,
+    "best_min_samples_leaf": 5,
+    "cv_rmse": 53.8891,
+    "all_scores": [
+      {
+        "n_estimators": 100,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.5872
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "cv_rmse": 54.0385
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": null,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.1032
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.3387
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "min_samples_leaf": 5,
+        "cv_rmse": 54.0377
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.1033
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 12,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.5359
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 12,
+        "min_samples_leaf": 5,
+        "cv_rmse": 54.0198
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 12,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.1037
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.2414
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "cv_rmse": 54.0214
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": null,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.1958
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 8,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.1635
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 8,
+        "min_samples_leaf": 5,
+        "cv_rmse": 53.9963
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 8,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.2015
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 12,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.3202
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 12,
+        "min_samples_leaf": 5,
+        "cv_rmse": 54.0092
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 12,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.1956
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.2378
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "cv_rmse": 53.9116
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.1477
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 8,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.1771
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 8,
+        "min_samples_leaf": 5,
+        "cv_rmse": 53.8891
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 8,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.1507
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 1,
+        "cv_rmse": 56.2013
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 5,
+        "cv_rmse": 53.9003
+      },
+      {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 10,
+        "cv_rmse": 54.1476
+      }
+    ]
+  },
+  "ridge_h3": {
+    "best_alpha": 0.01,
+    "note": "reused h1 params"
+  },
+  "rf_h3": {
+    "best_n_estimators": 300,
+    "best_max_depth": 8,
+    "best_min_samples_leaf": 5,
+    "note": "reused h1 params"
+  }
+}
