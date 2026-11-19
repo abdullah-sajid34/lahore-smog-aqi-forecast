@@ -1,0 +1,45 @@
+{
+  "kalman_params": {
+    "Q": 695.4046,
+    "R": 695.4046106420841,
+    "q_frac": 1.0
+  },
+  "persistence": {
+    "rmse": 68.4641,
+    "mae": 46.8829,
+    "f1": 0.4444,
+    "skill": null
+  },
+  "ridge_raw": {
+    "rmse": 54.9426,
+    "mae": 37.6598,
+    "f1": 0.3611,
+    "skill": 0.1975
+  },
+  "ridge_filtered": {
+    "rmse": 54.4703,
+    "mae": 37.1824,
+    "f1": 0.363,
+    "skill": 0.2044
+  },
+  "rf_raw": {
+    "rmse_mean": 55.3467,
+    "rmse_std": 0.1343,
+    "mae_mean": 37.6391,
+    "mae_std": 0.1525,
+    "f1_mean": 0.4186,
+    "f1_std": 0.0077,
+    "skill": 0.1916
+  },
+  "rf_filtered": {
+    "rmse_mean": 55.1256,
+    "rmse_std": 0.2697,
+    "mae_mean": 37.5859,
+    "mae_std": 0.1605,
+    "f1_mean": 0.3945,
+    "f1_std": 0.0084,
+    "skill": 0.1948
+  },
+  "rf_delta_rmse_filtered_minus_raw": -0.2211,
+  "ridge_delta_rmse": -0.4723
+}

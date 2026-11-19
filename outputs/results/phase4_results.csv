@@ -1,0 +1,6 @@
+model,input,rmse,rmse_std,mae,mae_std,f1,f1_std,skill
+Persistence,raw,68.4641,0.0,46.8829,0.0,0.4444,0.0,
+Ridge,raw,54.9426,0.0,37.6598,0.0,0.3611,0.0,0.1975
+Ridge,kalman_filtered,54.4703,0.0,37.1824,0.0,0.363,0.0,0.2044
+RandomForest,raw,55.3467,0.1343,37.6391,0.1525,0.4186,0.0077,0.1916
+RandomForest,kalman_filtered,55.1256,0.2697,37.5859,0.1605,0.3945,0.0084,0.1948

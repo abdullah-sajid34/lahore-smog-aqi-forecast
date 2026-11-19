@@ -1,0 +1,7 @@
+{
+  "Q": 695.4046,
+  "R": 695.4046106420841,
+  "best_q_frac": 1.0,
+  "cv_rmse": 18.4559,
+  "R_estimation_method": "Variance of residuals from 3-day centred rolling mean applied to training period only"
+}
