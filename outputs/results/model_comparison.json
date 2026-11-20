@@ -1,0 +1,52 @@
+[
+  {
+    "model": "Persistence",
+    "rmse": 68.4641,
+    "rmse_std": 0.0,
+    "mae": 46.8829,
+    "mae_std": 0.0,
+    "f1": 0.4444,
+    "f1_std": 0.0,
+    "skill": null
+  },
+  {
+    "model": "MovingAverage7",
+    "rmse": 62.0756,
+    "rmse_std": 0.0,
+    "mae": 43.4188,
+    "mae_std": 0.0,
+    "f1": 0.4838,
+    "f1_std": 0.0,
+    "skill": 0.0933
+  },
+  {
+    "model": "Ridge",
+    "rmse": 54.9426,
+    "rmse_std": 0.0,
+    "mae": 37.6598,
+    "mae_std": 0.0,
+    "f1": 0.3611,
+    "f1_std": 0.0,
+    "skill": 0.1975
+  },
+  {
+    "model": "RandomForest",
+    "rmse": 55.3467,
+    "rmse_std": 0.1343,
+    "mae": 37.6391,
+    "mae_std": 0.1525,
+    "f1": 0.4186,
+    "f1_std": 0.0077,
+    "skill": 0.1916
+  },
+  {
+    "model": "RandomForest+Kalman",
+    "rmse": 55.1256,
+    "rmse_std": 0.2697,
+    "mae": 37.5859,
+    "mae_std": 0.1605,
+    "f1": 0.3945,
+    "f1_std": 0.0084,
+    "skill": 0.1948
+  }
+]

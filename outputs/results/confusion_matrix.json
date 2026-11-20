@@ -1,0 +1,61 @@
+{
+  "model": "RandomForest",
+  "labels": [
+    "Moderate",
+    "Unhealthy for Sensitive",
+    "Unhealthy",
+    "Very Unhealthy",
+    "Hazardous",
+    "Hazardous+"
+  ],
+  "matrix": [
+    [
+      0,
+      8,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      40,
+      20,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      12,
+      49,
+      11,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      6,
+      42,
+      21,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      9,
+      18,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      10,
+      1
+    ]
+  ]
+}

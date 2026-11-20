@@ -1,0 +1,23 @@
+{
+  "annual_mean_pm25_ugm3": {
+    "2019": 120.15,
+    "2020": 101.18,
+    "2021": 110.16,
+    "2022": 133.14,
+    "2023": 115.47,
+    "2024": 136.83,
+    "2025": 209.32
+  },
+  "peak_pm25_ugm3": 545.82,
+  "peak_date": "2025-01-03",
+  "best_model_by_val": "RandomForest",
+  "best_model_rmse_test": 55.3823,
+  "best_model_skill_test": 0.1911,
+  "persistence_rmse_test": 68.4641,
+  "data_date_range_start": "2019-05-09",
+  "data_date_range_end": "2025-02-18",
+  "total_rows": 1882,
+  "train_rows": 1317,
+  "val_rows": 282,
+  "test_rows": 283
+}

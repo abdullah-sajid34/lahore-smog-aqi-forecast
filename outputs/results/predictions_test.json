@@ -1,0 +1,2297 @@
+[
+  {
+    "date": "2024-04-10",
+    "actual": 27.79,
+    "persistence": 80.68,
+    "moving_avg7": 67.56,
+    "ridge": 72.2844,
+    "rf": 61.521,
+    "rf_kalman": 60.3788
+  },
+  {
+    "date": "2024-04-11",
+    "actual": 38.34,
+    "persistence": 82.61,
+    "moving_avg7": 70.3257,
+    "ridge": 70.4403,
+    "rf": 67.8959,
+    "rf_kalman": 68.6583
+  },
+  {
+    "date": "2024-04-12",
+    "actual": 47.68,
+    "persistence": 27.79,
+    "moving_avg7": 66.5557,
+    "ridge": 67.8752,
+    "rf": 59.2486,
+    "rf_kalman": 60.35
+  },
+  {
+    "date": "2024-04-13",
+    "actual": 49.71,
+    "persistence": 38.34,
+    "moving_avg7": 64.1043,
+    "ridge": 43.1916,
+    "rf": 48.2603,
+    "rf_kalman": 47.422
+  },
+  {
+    "date": "2024-04-14",
+    "actual": 54.99,
+    "persistence": 47.68,
+    "moving_avg7": 59.9443,
+    "ridge": 56.0428,
+    "rf": 47.9202,
+    "rf_kalman": 48.6235
+  },
+  {
+    "date": "2024-05-01",
+    "actual": 111.67,
+    "persistence": 47.28,
+    "moving_avg7": 52.7657,
+    "ridge": 72.4745,
+    "rf": 56.3307,
+    "rf_kalman": 56.0153
+  },
+  {
+    "date": "2024-05-02",
+    "actual": 129.1,
+    "persistence": 44.03,
+    "moving_avg7": 52.1271,
+    "ridge": 79.5756,
+    "rf": 62.4828,
+    "rf_kalman": 58.6081
+  },
+  {
+    "date": "2024-05-03",
+    "actual": 65.18,
+    "persistence": 111.67,
+    "moving_avg7": 59.8743,
+    "ridge": 108.4149,
+    "rf": 74.3557,
+    "rf_kalman": 81.8291
+  },
+  {
+    "date": "2024-05-04",
+    "actual": 59.37,
+    "persistence": 129.1,
+    "moving_avg7": 65.9614,
+    "ridge": 88.403,
+    "rf": 70.3151,
+    "rf_kalman": 70.2131
+  },
+  {
+    "date": "2024-05-05",
+    "actual": 74.87,
+    "persistence": 65.18,
+    "moving_avg7": 69.2157,
+    "ridge": 58.7276,
+    "rf": 65.7726,
+    "rf_kalman": 69.1465
+  },
+  {
+    "date": "2024-05-06",
+    "actual": 101.98,
+    "persistence": 59.37,
+    "moving_avg7": 71.0586,
+    "ridge": 73.9241,
+    "rf": 75.7705,
+    "rf_kalman": 81.1689
+  },
+  {
+    "date": "2024-05-07",
+    "actual": 178.75,
+    "persistence": 74.87,
+    "moving_avg7": 75.9286,
+    "ridge": 79.0708,
+    "rf": 73.8816,
+    "rf_kalman": 75.6348
+  },
+  {
+    "date": "2024-05-08",
+    "actual": 125.22,
+    "persistence": 101.98,
+    "moving_avg7": 83.7429,
+    "ridge": 103.7305,
+    "rf": 108.8095,
+    "rf_kalman": 100.2385
+  },
+  {
+    "date": "2024-05-09",
+    "actual": 107.79,
+    "persistence": 178.75,
+    "moving_avg7": 102.9886,
+    "ridge": 101.8761,
+    "rf": 82.6766,
+    "rf_kalman": 80.8796
+  },
+  {
+    "date": "2024-05-10",
+    "actual": 44.84,
+    "persistence": 125.22,
+    "moving_avg7": 104.9243,
+    "ridge": 71.5141,
+    "rf": 75.6127,
+    "rf_kalman": 74.0197
+  },
+  {
+    "date": "2024-05-11",
+    "actual": 52.15,
+    "persistence": 107.79,
+    "moving_avg7": 101.88,
+    "ridge": 87.0791,
+    "rf": 110.1688,
+    "rf_kalman": 104.3832
+  },
+  {
+    "date": "2024-05-12",
+    "actual": 52.15,
+    "persistence": 44.84,
+    "moving_avg7": 98.9743,
+    "ridge": 47.4893,
+    "rf": 67.8453,
+    "rf_kalman": 66.7425
+  },
+  {
+    "date": "2024-05-13",
+    "actual": 76.8,
+    "persistence": 52.15,
+    "moving_avg7": 97.9429,
+    "ridge": 84.6918,
+    "rf": 103.5744,
+    "rf_kalman": 83.8916
+  },
+  {
+    "date": "2024-05-14",
+    "actual": 103.92,
+    "persistence": 52.15,
+    "moving_avg7": 94.6971,
+    "ridge": 83.0148,
+    "rf": 92.7173,
+    "rf_kalman": 80.0515
+  },
+  {
+    "date": "2024-05-15",
+    "actual": 166.65,
+    "persistence": 76.8,
+    "moving_avg7": 91.1,
+    "ridge": 88.1229,
+    "rf": 107.6498,
+    "rf_kalman": 96.4838
+  },
+  {
+    "date": "2024-05-16",
+    "actual": 113.6,
+    "persistence": 103.92,
+    "moving_avg7": 80.41,
+    "ridge": 82.9943,
+    "rf": 84.2763,
+    "rf_kalman": 85.0119
+  },
+  {
+    "date": "2024-05-17",
+    "actual": 74.87,
+    "persistence": 166.65,
+    "moving_avg7": 86.3286,
+    "ridge": 96.0025,
+    "rf": 75.779,
+    "rf_kalman": 79.5415
+  },
+  {
+    "date": "2024-05-18",
+    "actual": 119.41,
+    "persistence": 113.6,
+    "moving_avg7": 87.1586,
+    "ridge": 76.4172,
+    "rf": 83.8631,
+    "rf_kalman": 82.7647
+  },
+  {
+    "date": "2024-05-19",
+    "actual": 54.59,
+    "persistence": 74.87,
+    "moving_avg7": 91.4486,
+    "ridge": 58.1505,
+    "rf": 80.0862,
+    "rf_kalman": 80.7292
+  },
+  {
+    "date": "2024-05-20",
+    "actual": 63.25,
+    "persistence": 119.41,
+    "moving_avg7": 101.0571,
+    "ridge": 105.4283,
+    "rf": 114.8124,
+    "rf_kalman": 112.4884
+  },
+  {
+    "date": "2024-05-21",
+    "actual": 109.73,
+    "persistence": 54.59,
+    "moving_avg7": 101.4057,
+    "ridge": 80.8628,
+    "rf": 115.0507,
+    "rf_kalman": 98.4826
+  },
+  {
+    "date": "2024-05-22",
+    "actual": 94.23,
+    "persistence": 63.25,
+    "moving_avg7": 99.47,
+    "ridge": 86.2926,
+    "rf": 99.1587,
+    "rf_kalman": 97.1686
+  },
+  {
+    "date": "2024-05-23",
+    "actual": 72.93,
+    "persistence": 109.73,
+    "moving_avg7": 100.3,
+    "ridge": 72.6243,
+    "rf": 76.9151,
+    "rf_kalman": 77.3501
+  },
+  {
+    "date": "2024-05-24",
+    "actual": 48.5,
+    "persistence": 94.23,
+    "moving_avg7": 89.9543,
+    "ridge": 59.8618,
+    "rf": 65.699,
+    "rf_kalman": 68.3502
+  },
+  {
+    "date": "2024-05-25",
+    "actual": 48.09,
+    "persistence": 72.93,
+    "moving_avg7": 84.1443,
+    "ridge": 56.5359,
+    "rf": 78.892,
+    "rf_kalman": 76.6307
+  },
+  {
+    "date": "2024-05-26",
+    "actual": 36.31,
+    "persistence": 48.5,
+    "moving_avg7": 80.3771,
+    "ridge": 65.659,
+    "rf": 87.3164,
+    "rf_kalman": 82.7748
+  },
+  {
+    "date": "2024-05-27",
+    "actual": 35.4,
+    "persistence": 48.09,
+    "moving_avg7": 70.1886,
+    "ridge": 69.253,
+    "rf": 68.6547,
+    "rf_kalman": 64.4932
+  },
+  {
+    "date": "2024-05-28",
+    "actual": 57.44,
+    "persistence": 36.31,
+    "moving_avg7": 67.5771,
+    "ridge": 68.8845,
+    "rf": 66.4689,
+    "rf_kalman": 58.2357
+  },
+  {
+    "date": "2024-07-07",
+    "actual": 63.25,
+    "persistence": 36.72,
+    "moving_avg7": 41.8557,
+    "ridge": 20.7844,
+    "rf": 34.9199,
+    "rf_kalman": 36.9128
+  },
+  {
+    "date": "2024-07-08",
+    "actual": 67.12,
+    "persistence": 45.25,
+    "moving_avg7": 42.0886,
+    "ridge": 48.8294,
+    "rf": 38.4322,
+    "rf_kalman": 41.1217
+  },
+  {
+    "date": "2024-07-09",
+    "actual": 55.5,
+    "persistence": 63.25,
+    "moving_avg7": 44.1957,
+    "ridge": 53.5233,
+    "rf": 45.9669,
+    "rf_kalman": 45.5219
+  },
+  {
+    "date": "2024-07-10",
+    "actual": 86.49,
+    "persistence": 67.12,
+    "moving_avg7": 47.0886,
+    "ridge": 41.3731,
+    "rf": 49.6918,
+    "rf_kalman": 50.0124
+  },
+  {
+    "date": "2024-07-11",
+    "actual": 43.22,
+    "persistence": 55.5,
+    "moving_avg7": 48.3786,
+    "ridge": 48.4426,
+    "rf": 51.6978,
+    "rf_kalman": 48.9276
+  },
+  {
+    "date": "2024-07-12",
+    "actual": 48.09,
+    "persistence": 86.49,
+    "moving_avg7": 56.56,
+    "ridge": 41.7467,
+    "rf": 52.7896,
+    "rf_kalman": 50.8284
+  },
+  {
+    "date": "2024-07-13",
+    "actual": 111.67,
+    "persistence": 43.22,
+    "moving_avg7": 56.7929,
+    "ridge": 67.1424,
+    "rf": 57.8444,
+    "rf_kalman": 58.5017
+  },
+  {
+    "date": "2024-07-14",
+    "actual": 82.61,
+    "persistence": 48.09,
+    "moving_avg7": 58.4171,
+    "ridge": 57.6792,
+    "rf": 53.4836,
+    "rf_kalman": 50.6412
+  },
+  {
+    "date": "2024-07-15",
+    "actual": 138.78,
+    "persistence": 111.67,
+    "moving_avg7": 67.9057,
+    "ridge": 95.4419,
+    "rf": 65.1896,
+    "rf_kalman": 72.1151
+  },
+  {
+    "date": "2024-07-16",
+    "actual": 67.12,
+    "persistence": 82.61,
+    "moving_avg7": 70.6714,
+    "ridge": 75.8501,
+    "rf": 67.6917,
+    "rf_kalman": 68.5239
+  },
+  {
+    "date": "2024-07-17",
+    "actual": 41.59,
+    "persistence": 138.78,
+    "moving_avg7": 80.9086,
+    "ridge": 87.469,
+    "rf": 66.1027,
+    "rf_kalman": 68.0806
+  },
+  {
+    "date": "2024-07-18",
+    "actual": 61.31,
+    "persistence": 67.12,
+    "moving_avg7": 82.5686,
+    "ridge": 33.3877,
+    "rf": 53.4762,
+    "rf_kalman": 54.7291
+  },
+  {
+    "date": "2024-07-19",
+    "actual": 84.55,
+    "persistence": 41.59,
+    "moving_avg7": 76.1543,
+    "ridge": 62.1602,
+    "rf": 64.0598,
+    "rf_kalman": 64.8776
+  },
+  {
+    "date": "2024-07-20",
+    "actual": 53.78,
+    "persistence": 61.31,
+    "moving_avg7": 78.7386,
+    "ridge": 56.7146,
+    "rf": 63.2453,
+    "rf_kalman": 58.827
+  },
+  {
+    "date": "2024-07-21",
+    "actual": 55.4,
+    "persistence": 84.55,
+    "moving_avg7": 83.9471,
+    "ridge": 63.4577,
+    "rf": 69.0393,
+    "rf_kalman": 70.5821
+  },
+  {
+    "date": "2024-07-22",
+    "actual": 43.62,
+    "persistence": 53.78,
+    "moving_avg7": 75.6771,
+    "ridge": 43.4796,
+    "rf": 54.7871,
+    "rf_kalman": 56.5562
+  },
+  {
+    "date": "2024-07-23",
+    "actual": 82.61,
+    "persistence": 55.4,
+    "moving_avg7": 71.79,
+    "ridge": 37.2076,
+    "rf": 57.0504,
+    "rf_kalman": 52.8799
+  },
+  {
+    "date": "2024-07-24",
+    "actual": 48.5,
+    "persistence": 43.62,
+    "moving_avg7": 58.1957,
+    "ridge": 49.848,
+    "rf": 51.4555,
+    "rf_kalman": 51.0966
+  },
+  {
+    "date": "2024-07-25",
+    "actual": 39.16,
+    "persistence": 82.61,
+    "moving_avg7": 60.4086,
+    "ridge": 58.8641,
+    "rf": 55.3443,
+    "rf_kalman": 56.7704
+  },
+  {
+    "date": "2024-07-26",
+    "actual": 44.43,
+    "persistence": 48.5,
+    "moving_avg7": 61.3957,
+    "ridge": 45.111,
+    "rf": 51.1865,
+    "rf_kalman": 49.5761
+  },
+  {
+    "date": "2024-07-27",
+    "actual": 51.34,
+    "persistence": 39.16,
+    "moving_avg7": 58.2314,
+    "ridge": 33.243,
+    "rf": 46.9943,
+    "rf_kalman": 48.0281
+  },
+  {
+    "date": "2024-07-28",
+    "actual": 41.19,
+    "persistence": 44.43,
+    "moving_avg7": 52.5,
+    "ridge": 41.0055,
+    "rf": 47.5315,
+    "rf_kalman": 46.7479
+  },
+  {
+    "date": "2024-07-29",
+    "actual": 52.56,
+    "persistence": 51.34,
+    "moving_avg7": 52.1514,
+    "ridge": 17.7933,
+    "rf": 43.2372,
+    "rf_kalman": 44.2117
+  },
+  {
+    "date": "2024-07-30",
+    "actual": 94.23,
+    "persistence": 41.19,
+    "moving_avg7": 50.1214,
+    "ridge": 34.8571,
+    "rf": 45.4967,
+    "rf_kalman": 44.3152
+  },
+  {
+    "date": "2024-07-31",
+    "actual": 35.91,
+    "persistence": 52.56,
+    "moving_avg7": 51.3986,
+    "ridge": 18.9714,
+    "rf": 46.8878,
+    "rf_kalman": 44.8542
+  },
+  {
+    "date": "2024-08-01",
+    "actual": 49.71,
+    "persistence": 94.23,
+    "moving_avg7": 53.0586,
+    "ridge": -39.61,
+    "rf": 46.4445,
+    "rf_kalman": 47.0778
+  },
+  {
+    "date": "2024-08-02",
+    "actual": 32.07,
+    "persistence": 35.91,
+    "moving_avg7": 51.26,
+    "ridge": 52.2104,
+    "rf": 49.8134,
+    "rf_kalman": 52.8304
+  },
+  {
+    "date": "2024-08-03",
+    "actual": 36.72,
+    "persistence": 49.71,
+    "moving_avg7": 52.7671,
+    "ridge": 28.2811,
+    "rf": 44.8461,
+    "rf_kalman": 44.7073
+  },
+  {
+    "date": "2024-08-04",
+    "actual": 42.81,
+    "persistence": 32.07,
+    "moving_avg7": 51.0014,
+    "ridge": 17.8842,
+    "rf": 43.8907,
+    "rf_kalman": 43.8021
+  },
+  {
+    "date": "2024-08-05",
+    "actual": 32.55,
+    "persistence": 36.72,
+    "moving_avg7": 48.9129,
+    "ridge": 49.6959,
+    "rf": 51.4396,
+    "rf_kalman": 50.7942
+  },
+  {
+    "date": "2024-08-06",
+    "actual": 34.92,
+    "persistence": 42.81,
+    "moving_avg7": 49.1443,
+    "ridge": 66.7566,
+    "rf": 52.8474,
+    "rf_kalman": 52.6427
+  },
+  {
+    "date": "2024-08-07",
+    "actual": 24.46,
+    "persistence": 32.55,
+    "moving_avg7": 46.2857,
+    "ridge": 39.9347,
+    "rf": 43.9083,
+    "rf_kalman": 43.3542
+  },
+  {
+    "date": "2024-08-08",
+    "actual": 43.22,
+    "persistence": 34.92,
+    "moving_avg7": 37.8129,
+    "ridge": 40.7653,
+    "rf": 43.3691,
+    "rf_kalman": 42.5993
+  },
+  {
+    "date": "2024-08-09",
+    "actual": 52.56,
+    "persistence": 24.46,
+    "moving_avg7": 36.1771,
+    "ridge": 32.4445,
+    "rf": 39.7149,
+    "rf_kalman": 41.4668
+  },
+  {
+    "date": "2024-08-10",
+    "actual": 25.41,
+    "persistence": 43.22,
+    "moving_avg7": 35.25,
+    "ridge": 38.0202,
+    "rf": 41.0043,
+    "rf_kalman": 40.267
+  },
+  {
+    "date": "2024-08-11",
+    "actual": 26.37,
+    "persistence": 52.56,
+    "moving_avg7": 38.1771,
+    "ridge": 32.4495,
+    "rf": 42.0793,
+    "rf_kalman": 40.0818
+  },
+  {
+    "date": "2024-08-12",
+    "actual": 39.97,
+    "persistence": 25.41,
+    "moving_avg7": 36.5614,
+    "ridge": 53.5876,
+    "rf": 42.8265,
+    "rf_kalman": 43.3969
+  },
+  {
+    "date": "2024-08-13",
+    "actual": 47.28,
+    "persistence": 26.37,
+    "moving_avg7": 34.2129,
+    "ridge": 47.6741,
+    "rf": 38.2173,
+    "rf_kalman": 40.802
+  },
+  {
+    "date": "2024-08-14",
+    "actual": 40.78,
+    "persistence": 39.97,
+    "moving_avg7": 35.2729,
+    "ridge": 59.3208,
+    "rf": 42.7408,
+    "rf_kalman": 43.4131
+  },
+  {
+    "date": "2024-08-15",
+    "actual": 40.37,
+    "persistence": 47.28,
+    "moving_avg7": 37.0386,
+    "ridge": 14.7793,
+    "rf": 40.1505,
+    "rf_kalman": 37.9212
+  },
+  {
+    "date": "2024-08-16",
+    "actual": 42.0,
+    "persistence": 40.78,
+    "moving_avg7": 39.37,
+    "ridge": 24.3816,
+    "rf": 40.096,
+    "rf_kalman": 39.0992
+  },
+  {
+    "date": "2024-08-17",
+    "actual": 50.12,
+    "persistence": 40.37,
+    "moving_avg7": 38.9629,
+    "ridge": 21.488,
+    "rf": 40.959,
+    "rf_kalman": 39.8927
+  },
+  {
+    "date": "2024-08-18",
+    "actual": 44.03,
+    "persistence": 42.0,
+    "moving_avg7": 37.4543,
+    "ridge": 44.3462,
+    "rf": 44.0335,
+    "rf_kalman": 43.9308
+  },
+  {
+    "date": "2024-08-19",
+    "actual": 43.62,
+    "persistence": 50.12,
+    "moving_avg7": 40.9843,
+    "ridge": 43.2647,
+    "rf": 44.6165,
+    "rf_kalman": 46.2984
+  },
+  {
+    "date": "2024-08-20",
+    "actual": 39.97,
+    "persistence": 44.03,
+    "moving_avg7": 43.5071,
+    "ridge": 54.2231,
+    "rf": 45.2899,
+    "rf_kalman": 43.2776
+  },
+  {
+    "date": "2024-08-21",
+    "actual": 61.31,
+    "persistence": 43.62,
+    "moving_avg7": 44.0286,
+    "ridge": 57.158,
+    "rf": 50.6087,
+    "rf_kalman": 46.9759
+  },
+  {
+    "date": "2024-08-22",
+    "actual": 48.5,
+    "persistence": 39.97,
+    "moving_avg7": 42.9843,
+    "ridge": 68.94,
+    "rf": 50.7082,
+    "rf_kalman": 48.507
+  },
+  {
+    "date": "2024-08-23",
+    "actual": 52.56,
+    "persistence": 61.31,
+    "moving_avg7": 45.9171,
+    "ridge": 53.0897,
+    "rf": 46.9174,
+    "rf_kalman": 46.011
+  },
+  {
+    "date": "2024-08-24",
+    "actual": 37.94,
+    "persistence": 48.5,
+    "moving_avg7": 47.0786,
+    "ridge": 21.7041,
+    "rf": 42.4404,
+    "rf_kalman": 42.3786
+  },
+  {
+    "date": "2024-08-25",
+    "actual": 49.71,
+    "persistence": 52.56,
+    "moving_avg7": 48.5871,
+    "ridge": 65.8149,
+    "rf": 55.3518,
+    "rf_kalman": 54.5485
+  },
+  {
+    "date": "2024-08-26",
+    "actual": 22.09,
+    "persistence": 37.94,
+    "moving_avg7": 46.8471,
+    "ridge": 58.2208,
+    "rf": 52.7964,
+    "rf_kalman": 50.5793
+  },
+  {
+    "date": "2024-08-27",
+    "actual": 43.62,
+    "persistence": 49.71,
+    "moving_avg7": 47.6586,
+    "ridge": 39.6703,
+    "rf": 45.2296,
+    "rf_kalman": 45.6023
+  },
+  {
+    "date": "2024-08-28",
+    "actual": 22.56,
+    "persistence": 22.09,
+    "moving_avg7": 44.5829,
+    "ridge": 21.5834,
+    "rf": 42.4858,
+    "rf_kalman": 43.3093
+  },
+  {
+    "date": "2024-08-29",
+    "actual": 37.12,
+    "persistence": 43.62,
+    "moving_avg7": 45.1043,
+    "ridge": -6.2644,
+    "rf": 40.7073,
+    "rf_kalman": 41.3887
+  },
+  {
+    "date": "2024-08-30",
+    "actual": 46.87,
+    "persistence": 22.56,
+    "moving_avg7": 39.5686,
+    "ridge": 42.238,
+    "rf": 43.1784,
+    "rf_kalman": 42.3548
+  },
+  {
+    "date": "2024-08-31",
+    "actual": 39.97,
+    "persistence": 37.12,
+    "moving_avg7": 37.9429,
+    "ridge": 55.2912,
+    "rf": 44.0954,
+    "rf_kalman": 48.2773
+  },
+  {
+    "date": "2024-09-01",
+    "actual": 46.06,
+    "persistence": 46.87,
+    "moving_avg7": 37.13,
+    "ridge": 74.136,
+    "rf": 45.9456,
+    "rf_kalman": 46.6482
+  },
+  {
+    "date": "2024-09-02",
+    "actual": 40.37,
+    "persistence": 39.97,
+    "moving_avg7": 37.42,
+    "ridge": 41.8397,
+    "rf": 41.5254,
+    "rf_kalman": 39.5994
+  },
+  {
+    "date": "2024-09-03",
+    "actual": 70.99,
+    "persistence": 46.06,
+    "moving_avg7": 36.8986,
+    "ridge": 47.1674,
+    "rf": 42.8066,
+    "rf_kalman": 41.4122
+  },
+  {
+    "date": "2024-09-04",
+    "actual": 65.18,
+    "persistence": 40.37,
+    "moving_avg7": 39.51,
+    "ridge": 71.867,
+    "rf": 50.1386,
+    "rf_kalman": 50.2619
+  },
+  {
+    "date": "2024-09-05",
+    "actual": 78.74,
+    "persistence": 70.99,
+    "moving_avg7": 43.42,
+    "ridge": 66.2031,
+    "rf": 47.832,
+    "rf_kalman": 47.7159
+  },
+  {
+    "date": "2024-09-06",
+    "actual": 43.22,
+    "persistence": 65.18,
+    "moving_avg7": 49.5086,
+    "ridge": 31.7222,
+    "rf": 44.839,
+    "rf_kalman": 45.5849
+  },
+  {
+    "date": "2024-09-07",
+    "actual": 52.56,
+    "persistence": 78.74,
+    "moving_avg7": 55.4543,
+    "ridge": 57.4221,
+    "rf": 51.332,
+    "rf_kalman": 51.8368
+  },
+  {
+    "date": "2024-09-08",
+    "actual": 61.31,
+    "persistence": 43.22,
+    "moving_avg7": 54.9329,
+    "ridge": 70.6704,
+    "rf": 65.5899,
+    "rf_kalman": 63.1375
+  },
+  {
+    "date": "2024-09-09",
+    "actual": 48.9,
+    "persistence": 52.56,
+    "moving_avg7": 56.7314,
+    "ridge": 83.2131,
+    "rf": 63.0394,
+    "rf_kalman": 61.3111
+  },
+  {
+    "date": "2024-09-10",
+    "actual": 50.12,
+    "persistence": 61.31,
+    "moving_avg7": 58.91,
+    "ridge": 56.8281,
+    "rf": 51.653,
+    "rf_kalman": 51.4559
+  },
+  {
+    "date": "2024-09-11",
+    "actual": 65.18,
+    "persistence": 48.9,
+    "moving_avg7": 60.1286,
+    "ridge": 50.8681,
+    "rf": 53.2091,
+    "rf_kalman": 51.1012
+  },
+  {
+    "date": "2024-09-12",
+    "actual": 41.59,
+    "persistence": 50.12,
+    "moving_avg7": 57.1471,
+    "ridge": 63.6625,
+    "rf": 54.1273,
+    "rf_kalman": 52.8073
+  },
+  {
+    "date": "2024-09-13",
+    "actual": 44.43,
+    "persistence": 65.18,
+    "moving_avg7": 57.1471,
+    "ridge": 69.3572,
+    "rf": 56.3388,
+    "rf_kalman": 57.1046
+  },
+  {
+    "date": "2024-09-14",
+    "actual": 86.49,
+    "persistence": 41.59,
+    "moving_avg7": 51.84,
+    "ridge": 50.1617,
+    "rf": 52.8508,
+    "rf_kalman": 52.0971
+  },
+  {
+    "date": "2024-09-15",
+    "actual": 86.49,
+    "persistence": 44.43,
+    "moving_avg7": 52.0129,
+    "ridge": 80.6149,
+    "rf": 62.5261,
+    "rf_kalman": 63.29
+  },
+  {
+    "date": "2024-09-16",
+    "actual": 86.49,
+    "persistence": 86.49,
+    "moving_avg7": 56.86,
+    "ridge": 104.3819,
+    "rf": 66.1723,
+    "rf_kalman": 66.5993
+  },
+  {
+    "date": "2024-09-17",
+    "actual": 82.61,
+    "persistence": 86.49,
+    "moving_avg7": 60.4571,
+    "ridge": 94.8415,
+    "rf": 63.1883,
+    "rf_kalman": 62.4703
+  },
+  {
+    "date": "2024-09-18",
+    "actual": 51.74,
+    "persistence": 86.49,
+    "moving_avg7": 65.8271,
+    "ridge": 85.8254,
+    "rf": 64.7803,
+    "rf_kalman": 67.603
+  },
+  {
+    "date": "2024-09-19",
+    "actual": 49.71,
+    "persistence": 82.61,
+    "moving_avg7": 70.4686,
+    "ridge": 60.5476,
+    "rf": 58.8894,
+    "rf_kalman": 56.4797
+  },
+  {
+    "date": "2024-09-20",
+    "actual": 70.99,
+    "persistence": 51.74,
+    "moving_avg7": 68.5486,
+    "ridge": 91.0445,
+    "rf": 79.1294,
+    "rf_kalman": 75.8009
+  },
+  {
+    "date": "2024-09-21",
+    "actual": 63.25,
+    "persistence": 49.71,
+    "moving_avg7": 69.7086,
+    "ridge": 88.4737,
+    "rf": 71.9389,
+    "rf_kalman": 69.9752
+  },
+  {
+    "date": "2024-09-22",
+    "actual": 80.68,
+    "persistence": 70.99,
+    "moving_avg7": 73.5029,
+    "ridge": 90.4036,
+    "rf": 68.7765,
+    "rf_kalman": 71.8746
+  },
+  {
+    "date": "2024-09-23",
+    "actual": 78.74,
+    "persistence": 63.25,
+    "moving_avg7": 70.1829,
+    "ridge": 87.235,
+    "rf": 71.8909,
+    "rf_kalman": 74.2391
+  },
+  {
+    "date": "2024-09-24",
+    "actual": 92.3,
+    "persistence": 80.68,
+    "moving_avg7": 69.3529,
+    "ridge": 93.1514,
+    "rf": 70.6698,
+    "rf_kalman": 73.2185
+  },
+  {
+    "date": "2024-09-25",
+    "actual": 84.55,
+    "persistence": 78.74,
+    "moving_avg7": 68.2457,
+    "ridge": 92.761,
+    "rf": 71.1136,
+    "rf_kalman": 73.2638
+  },
+  {
+    "date": "2024-09-26",
+    "actual": 46.87,
+    "persistence": 92.3,
+    "moving_avg7": 69.63,
+    "ridge": 57.8406,
+    "rf": 62.4002,
+    "rf_kalman": 60.3922
+  },
+  {
+    "date": "2024-09-27",
+    "actual": 47.28,
+    "persistence": 84.55,
+    "moving_avg7": 74.3171,
+    "ridge": 82.3618,
+    "rf": 70.28,
+    "rf_kalman": 73.8973
+  },
+  {
+    "date": "2024-09-28",
+    "actual": 61.31,
+    "persistence": 46.87,
+    "moving_avg7": 73.9114,
+    "ridge": 23.5954,
+    "rf": 63.221,
+    "rf_kalman": 60.1445
+  },
+  {
+    "date": "2024-09-29",
+    "actual": 65.18,
+    "persistence": 47.28,
+    "moving_avg7": 70.5243,
+    "ridge": 88.3226,
+    "rf": 78.6636,
+    "rf_kalman": 79.3143
+  },
+  {
+    "date": "2024-09-30",
+    "actual": 70.99,
+    "persistence": 61.31,
+    "moving_avg7": 70.2471,
+    "ridge": 72.8836,
+    "rf": 73.595,
+    "rf_kalman": 71.5348
+  },
+  {
+    "date": "2024-10-01",
+    "actual": 101.98,
+    "persistence": 65.18,
+    "moving_avg7": 68.0329,
+    "ridge": 84.4926,
+    "rf": 85.469,
+    "rf_kalman": 83.1618
+  },
+  {
+    "date": "2024-10-02",
+    "actual": 154.54,
+    "persistence": 70.99,
+    "moving_avg7": 66.9257,
+    "ridge": 85.524,
+    "rf": 76.4802,
+    "rf_kalman": 75.9614
+  },
+  {
+    "date": "2024-10-03",
+    "actual": 142.65,
+    "persistence": 101.98,
+    "moving_avg7": 68.3086,
+    "ridge": 111.3154,
+    "rf": 91.8817,
+    "rf_kalman": 90.3577
+  },
+  {
+    "date": "2024-10-04",
+    "actual": 65.18,
+    "persistence": 154.54,
+    "moving_avg7": 78.3071,
+    "ridge": 131.4403,
+    "rf": 82.9344,
+    "rf_kalman": 83.81
+  },
+  {
+    "date": "2024-10-05",
+    "actual": 35.91,
+    "persistence": 142.65,
+    "moving_avg7": 91.99,
+    "ridge": 73.7843,
+    "rf": 62.5041,
+    "rf_kalman": 61.8918
+  },
+  {
+    "date": "2024-10-06",
+    "actual": 82.61,
+    "persistence": 65.18,
+    "moving_avg7": 94.5471,
+    "ridge": 62.1124,
+    "rf": 64.4472,
+    "rf_kalman": 63.0932
+  },
+  {
+    "date": "2024-10-07",
+    "actual": 107.79,
+    "persistence": 35.91,
+    "moving_avg7": 90.9186,
+    "ridge": 93.2663,
+    "rf": 90.4379,
+    "rf_kalman": 89.3239
+  },
+  {
+    "date": "2024-10-08",
+    "actual": 53.37,
+    "persistence": 82.61,
+    "moving_avg7": 93.4086,
+    "ridge": 47.972,
+    "rf": 57.8469,
+    "rf_kalman": 63.2235
+  },
+  {
+    "date": "2024-10-09",
+    "actual": 70.99,
+    "persistence": 107.79,
+    "moving_avg7": 98.6657,
+    "ridge": 128.798,
+    "rf": 102.1757,
+    "rf_kalman": 108.0005
+  },
+  {
+    "date": "2024-10-10",
+    "actual": 80.68,
+    "persistence": 53.37,
+    "moving_avg7": 91.7214,
+    "ridge": 103.3841,
+    "rf": 108.8183,
+    "rf_kalman": 105.6729
+  },
+  {
+    "date": "2024-10-11",
+    "actual": 101.98,
+    "persistence": 70.99,
+    "moving_avg7": 79.7857,
+    "ridge": 100.3105,
+    "rf": 94.9335,
+    "rf_kalman": 100.0464
+  },
+  {
+    "date": "2024-10-12",
+    "actual": 101.98,
+    "persistence": 80.68,
+    "moving_avg7": 70.9329,
+    "ridge": 118.1012,
+    "rf": 120.2167,
+    "rf_kalman": 117.7221
+  },
+  {
+    "date": "2024-10-13",
+    "actual": 155.55,
+    "persistence": 101.98,
+    "moving_avg7": 76.19,
+    "ridge": 120.7146,
+    "rf": 100.8907,
+    "rf_kalman": 109.4887
+  },
+  {
+    "date": "2024-10-14",
+    "actual": 111.67,
+    "persistence": 101.98,
+    "moving_avg7": 85.6286,
+    "ridge": 124.0388,
+    "rf": 106.3297,
+    "rf_kalman": 118.6746
+  },
+  {
+    "date": "2024-10-15",
+    "actual": 113.6,
+    "persistence": 155.55,
+    "moving_avg7": 96.0486,
+    "ridge": 148.8349,
+    "rf": 130.5856,
+    "rf_kalman": 129.8044
+  },
+  {
+    "date": "2024-10-16",
+    "actual": 123.29,
+    "persistence": 111.67,
+    "moving_avg7": 96.6029,
+    "ridge": 132.0251,
+    "rf": 137.393,
+    "rf_kalman": 134.6826
+  },
+  {
+    "date": "2024-10-17",
+    "actual": 209.03,
+    "persistence": 113.6,
+    "moving_avg7": 105.2071,
+    "ridge": 134.9253,
+    "rf": 145.9627,
+    "rf_kalman": 156.7154
+  },
+  {
+    "date": "2024-10-18",
+    "actual": 223.15,
+    "persistence": 123.29,
+    "moving_avg7": 112.6786,
+    "ridge": 140.8218,
+    "rf": 149.7514,
+    "rf_kalman": 157.7203
+  },
+  {
+    "date": "2024-10-19",
+    "actual": 233.25,
+    "persistence": 209.03,
+    "moving_avg7": 131.0143,
+    "ridge": 181.6811,
+    "rf": 235.1903,
+    "rf_kalman": 202.7444
+  },
+  {
+    "date": "2024-10-20",
+    "actual": 226.18,
+    "persistence": 223.15,
+    "moving_avg7": 148.3243,
+    "ridge": 186.0776,
+    "rf": 237.2874,
+    "rf_kalman": 242.4507
+  },
+  {
+    "date": "2024-10-21",
+    "actual": 264.63,
+    "persistence": 233.25,
+    "moving_avg7": 167.0771,
+    "ridge": 195.8634,
+    "rf": 259.0251,
+    "rf_kalman": 269.1116
+  },
+  {
+    "date": "2024-10-22",
+    "actual": 247.37,
+    "persistence": 226.18,
+    "moving_avg7": 177.1671,
+    "ridge": 193.3959,
+    "rf": 270.9196,
+    "rf_kalman": 273.6587
+  },
+  {
+    "date": "2024-10-23",
+    "actual": 117.48,
+    "persistence": 264.63,
+    "moving_avg7": 199.0186,
+    "ridge": 196.3305,
+    "rf": 205.3541,
+    "rf_kalman": 202.1459
+  },
+  {
+    "date": "2024-10-24",
+    "actual": 119.41,
+    "persistence": 247.37,
+    "moving_avg7": 218.1286,
+    "ridge": 205.2893,
+    "rf": 221.84,
+    "rf_kalman": 211.0663
+  },
+  {
+    "date": "2024-10-25",
+    "actual": 157.56,
+    "persistence": 117.48,
+    "moving_avg7": 217.2986,
+    "ridge": 153.1304,
+    "rf": 156.2645,
+    "rf_kalman": 165.1224
+  },
+  {
+    "date": "2024-10-26",
+    "actual": 282.79,
+    "persistence": 119.41,
+    "moving_avg7": 204.4957,
+    "ridge": 162.4982,
+    "rf": 186.7442,
+    "rf_kalman": 186.7273
+  },
+  {
+    "date": "2024-10-27",
+    "actual": 303.98,
+    "persistence": 157.56,
+    "moving_avg7": 195.1257,
+    "ridge": 180.772,
+    "rf": 214.5019,
+    "rf_kalman": 213.216
+  },
+  {
+    "date": "2024-10-28",
+    "actual": 242.33,
+    "persistence": 282.79,
+    "moving_avg7": 202.2029,
+    "ridge": 217.7129,
+    "rf": 247.7358,
+    "rf_kalman": 251.7211
+  },
+  {
+    "date": "2024-10-29",
+    "actual": 212.05,
+    "persistence": 303.98,
+    "moving_avg7": 213.3171,
+    "ridge": 217.9406,
+    "rf": 216.0591,
+    "rf_kalman": 208.18
+  },
+  {
+    "date": "2024-10-30",
+    "actual": 155.55,
+    "persistence": 242.33,
+    "moving_avg7": 210.1314,
+    "ridge": 192.7081,
+    "rf": 181.7832,
+    "rf_kalman": 194.2743
+  },
+  {
+    "date": "2024-10-31",
+    "actual": 158.57,
+    "persistence": 212.05,
+    "moving_avg7": 205.0857,
+    "ridge": 185.7972,
+    "rf": 177.6635,
+    "rf_kalman": 185.6442
+  },
+  {
+    "date": "2024-11-01",
+    "actual": 268.66,
+    "persistence": 155.55,
+    "moving_avg7": 210.5243,
+    "ridge": 186.0958,
+    "rf": 200.2898,
+    "rf_kalman": 200.0379
+  },
+  {
+    "date": "2024-11-02",
+    "actual": 346.36,
+    "persistence": 158.57,
+    "moving_avg7": 216.1186,
+    "ridge": 191.8838,
+    "rf": 235.0013,
+    "rf_kalman": 210.1833
+  },
+  {
+    "date": "2024-11-03",
+    "actual": 249.39,
+    "persistence": 268.66,
+    "moving_avg7": 231.99,
+    "ridge": 240.1744,
+    "rf": 296.1646,
+    "rf_kalman": 290.9163
+  },
+  {
+    "date": "2024-11-04",
+    "actual": 341.32,
+    "persistence": 346.36,
+    "moving_avg7": 241.0714,
+    "ridge": 260.4264,
+    "rf": 286.3752,
+    "rf_kalman": 291.1175
+  },
+  {
+    "date": "2024-11-05",
+    "actual": 427.675,
+    "persistence": 249.39,
+    "moving_avg7": 233.2729,
+    "ridge": 213.7106,
+    "rf": 283.8269,
+    "rf_kalman": 281.6516
+  },
+  {
+    "date": "2024-11-07",
+    "actual": 517.06,
+    "persistence": 427.675,
+    "moving_avg7": 278.2179,
+    "ridge": 297.5306,
+    "rf": 304.9831,
+    "rf_kalman": 310.8193
+  },
+  {
+    "date": "2024-11-08",
+    "actual": 448.92,
+    "persistence": 514.03,
+    "moving_avg7": 329.4293,
+    "ridge": 337.8595,
+    "rf": 293.6369,
+    "rf_kalman": 297.5061
+  },
+  {
+    "date": "2024-11-09",
+    "actual": 373.21,
+    "persistence": 517.06,
+    "moving_avg7": 380.6421,
+    "ridge": 352.1728,
+    "rf": 291.0113,
+    "rf_kalman": 291.1412
+  },
+  {
+    "date": "2024-11-10",
+    "actual": 459.52,
+    "persistence": 448.92,
+    "moving_avg7": 406.3936,
+    "ridge": 332.2832,
+    "rf": 297.6424,
+    "rf_kalman": 295.4771
+  },
+  {
+    "date": "2024-11-11",
+    "actual": 370.18,
+    "persistence": 373.21,
+    "moving_avg7": 410.2293,
+    "ridge": 300.0293,
+    "rf": 258.7928,
+    "rf_kalman": 244.8049
+  },
+  {
+    "date": "2024-11-12",
+    "actual": 295.91,
+    "persistence": 459.52,
+    "moving_avg7": 440.2479,
+    "ridge": 349.6594,
+    "rf": 296.4008,
+    "rf_kalman": 303.7082
+  },
+  {
+    "date": "2024-11-13",
+    "actual": 386.8,
+    "persistence": 370.18,
+    "moving_avg7": 444.3707,
+    "ridge": 333.8946,
+    "rf": 307.574,
+    "rf_kalman": 321.0615
+  },
+  {
+    "date": "2024-11-15",
+    "actual": 415.61,
+    "persistence": 386.8,
+    "moving_avg7": 407.3714,
+    "ridge": 332.259,
+    "rf": 293.1487,
+    "rf_kalman": 314.4257
+  },
+  {
+    "date": "2024-11-16",
+    "actual": 210.04,
+    "persistence": 477.69,
+    "moving_avg7": 401.7471,
+    "ridge": 327.7266,
+    "rf": 156.0561,
+    "rf_kalman": 162.0203
+  },
+  {
+    "date": "2024-11-17",
+    "actual": 219.12,
+    "persistence": 415.61,
+    "moving_avg7": 396.9886,
+    "ridge": 337.2525,
+    "rf": 300.8791,
+    "rf_kalman": 317.2622
+  },
+  {
+    "date": "2024-11-18",
+    "actual": 220.13,
+    "persistence": 210.04,
+    "moving_avg7": 373.6786,
+    "ridge": 262.8736,
+    "rf": 299.5117,
+    "rf_kalman": 314.9174
+  },
+  {
+    "date": "2024-11-19",
+    "actual": 259.58,
+    "persistence": 219.12,
+    "moving_avg7": 339.3357,
+    "ridge": 263.7514,
+    "rf": 308.4109,
+    "rf_kalman": 315.5437
+  },
+  {
+    "date": "2024-11-20",
+    "actual": 264.63,
+    "persistence": 220.13,
+    "moving_avg7": 317.9,
+    "ridge": 261.771,
+    "rf": 310.6079,
+    "rf_kalman": 318.1597
+  },
+  {
+    "date": "2024-11-21",
+    "actual": 271.69,
+    "persistence": 259.58,
+    "moving_avg7": 312.71,
+    "ridge": 275.0488,
+    "rf": 315.3782,
+    "rf_kalman": 328.2098
+  },
+  {
+    "date": "2024-11-22",
+    "actual": 257.56,
+    "persistence": 264.63,
+    "moving_avg7": 295.2571,
+    "ridge": 260.6768,
+    "rf": 309.3426,
+    "rf_kalman": 297.1897
+  },
+  {
+    "date": "2024-11-23",
+    "actual": 258.57,
+    "persistence": 271.69,
+    "moving_avg7": 265.8286,
+    "ridge": 223.4244,
+    "rf": 151.8301,
+    "rf_kalman": 154.3444
+  },
+  {
+    "date": "2024-11-24",
+    "actual": 157.56,
+    "persistence": 257.56,
+    "moving_avg7": 243.25,
+    "ridge": 234.7026,
+    "rf": 296.5457,
+    "rf_kalman": 290.8778
+  },
+  {
+    "date": "2024-11-25",
+    "actual": 210.04,
+    "persistence": 258.57,
+    "moving_avg7": 250.1829,
+    "ridge": 248.0542,
+    "rf": 296.0027,
+    "rf_kalman": 296.6389
+  },
+  {
+    "date": "2024-11-26",
+    "actual": 216.09,
+    "persistence": 157.56,
+    "moving_avg7": 241.3886,
+    "ridge": 212.2471,
+    "rf": 236.9026,
+    "rf_kalman": 283.0346
+  },
+  {
+    "date": "2024-11-27",
+    "actual": 324.16,
+    "persistence": 210.04,
+    "moving_avg7": 239.9471,
+    "ridge": 236.9295,
+    "rf": 297.1374,
+    "rf_kalman": 281.688
+  },
+  {
+    "date": "2024-11-28",
+    "actual": 246.36,
+    "persistence": 216.09,
+    "moving_avg7": 233.7343,
+    "ridge": 235.9213,
+    "rf": 297.7279,
+    "rf_kalman": 291.3836
+  },
+  {
+    "date": "2024-11-29",
+    "actual": 169.67,
+    "persistence": 324.16,
+    "moving_avg7": 242.2386,
+    "ridge": 271.9458,
+    "rf": 286.9543,
+    "rf_kalman": 291.8648
+  },
+  {
+    "date": "2024-11-30",
+    "actual": 179.76,
+    "persistence": 246.36,
+    "moving_avg7": 238.62,
+    "ridge": 235.6549,
+    "rf": 248.0044,
+    "rf_kalman": 250.4683
+  },
+  {
+    "date": "2024-12-01",
+    "actual": 199.95,
+    "persistence": 169.67,
+    "moving_avg7": 226.0643,
+    "ridge": 204.6859,
+    "rf": 247.5657,
+    "rf_kalman": 284.1479
+  },
+  {
+    "date": "2024-12-02",
+    "actual": 144.59,
+    "persistence": 179.76,
+    "moving_avg7": 214.8057,
+    "ridge": 206.5325,
+    "rf": 248.582,
+    "rf_kalman": 227.9953
+  },
+  {
+    "date": "2024-12-03",
+    "actual": 82.61,
+    "persistence": 199.95,
+    "moving_avg7": 220.8614,
+    "ridge": 218.5983,
+    "rf": 260.4383,
+    "rf_kalman": 256.0635
+  },
+  {
+    "date": "2024-12-04",
+    "actual": 146.53,
+    "persistence": 144.59,
+    "moving_avg7": 211.5114,
+    "ridge": 204.7744,
+    "rf": 226.2109,
+    "rf_kalman": 211.8995
+  },
+  {
+    "date": "2024-12-05",
+    "actual": 183.8,
+    "persistence": 82.61,
+    "moving_avg7": 192.4429,
+    "ridge": 182.4201,
+    "rf": 162.6875,
+    "rf_kalman": 192.7747
+  },
+  {
+    "date": "2024-12-06",
+    "actual": 163.62,
+    "persistence": 146.53,
+    "moving_avg7": 167.0671,
+    "ridge": 199.8147,
+    "rf": 208.2346,
+    "rf_kalman": 202.8604
+  },
+  {
+    "date": "2024-12-07",
+    "actual": 171.69,
+    "persistence": 183.8,
+    "moving_avg7": 158.13,
+    "ridge": 214.8397,
+    "rf": 241.0084,
+    "rf_kalman": 223.8868
+  },
+  {
+    "date": "2024-12-08",
+    "actual": 168.66,
+    "persistence": 163.62,
+    "moving_avg7": 157.2657,
+    "ridge": 186.7486,
+    "rf": 164.9975,
+    "rf_kalman": 179.9655
+  },
+  {
+    "date": "2024-12-09",
+    "actual": 161.6,
+    "persistence": 171.69,
+    "moving_avg7": 156.1129,
+    "ridge": 210.9815,
+    "rf": 244.6744,
+    "rf_kalman": 232.1245
+  },
+  {
+    "date": "2024-12-10",
+    "actual": 198.94,
+    "persistence": 168.66,
+    "moving_avg7": 151.6429,
+    "ridge": 217.2621,
+    "rf": 217.1613,
+    "rf_kalman": 201.2406
+  },
+  {
+    "date": "2024-12-11",
+    "actual": 202.97,
+    "persistence": 161.6,
+    "moving_avg7": 154.0729,
+    "ridge": 207.8883,
+    "rf": 221.2375,
+    "rf_kalman": 204.74
+  },
+  {
+    "date": "2024-12-12",
+    "actual": 189.85,
+    "persistence": 198.94,
+    "moving_avg7": 170.6914,
+    "ridge": 221.2878,
+    "rf": 246.9531,
+    "rf_kalman": 216.6528
+  },
+  {
+    "date": "2024-12-13",
+    "actual": 182.79,
+    "persistence": 202.97,
+    "moving_avg7": 178.7543,
+    "ridge": 225.4805,
+    "rf": 232.8198,
+    "rf_kalman": 236.6724
+  },
+  {
+    "date": "2024-12-14",
+    "actual": 246.36,
+    "persistence": 189.85,
+    "moving_avg7": 179.6186,
+    "ridge": 229.234,
+    "rf": 244.1513,
+    "rf_kalman": 280.5601
+  },
+  {
+    "date": "2024-12-15",
+    "actual": 302.97,
+    "persistence": 182.79,
+    "moving_avg7": 182.3571,
+    "ridge": 221.055,
+    "rf": 230.0523,
+    "rf_kalman": 212.4612
+  },
+  {
+    "date": "2024-12-16",
+    "actual": 336.27,
+    "persistence": 246.36,
+    "moving_avg7": 193.0243,
+    "ridge": 254.8396,
+    "rf": 313.8864,
+    "rf_kalman": 316.7399
+  },
+  {
+    "date": "2024-12-17",
+    "actual": 361.1,
+    "persistence": 302.97,
+    "moving_avg7": 212.2114,
+    "ridge": 277.2502,
+    "rf": 316.7859,
+    "rf_kalman": 311.7315
+  },
+  {
+    "date": "2024-12-18",
+    "actual": 340.31,
+    "persistence": 336.27,
+    "moving_avg7": 237.1643,
+    "ridge": 292.2623,
+    "rf": 343.6854,
+    "rf_kalman": 339.0195
+  },
+  {
+    "date": "2024-12-19",
+    "actual": 306.0,
+    "persistence": 361.1,
+    "moving_avg7": 260.33,
+    "ridge": 305.9207,
+    "rf": 349.1691,
+    "rf_kalman": 345.4626
+  },
+  {
+    "date": "2024-12-20",
+    "actual": 267.65,
+    "persistence": 340.31,
+    "moving_avg7": 279.95,
+    "ridge": 300.5365,
+    "rf": 372.4701,
+    "rf_kalman": 369.6221
+  },
+  {
+    "date": "2024-12-21",
+    "actual": 435.29,
+    "persistence": 306.0,
+    "moving_avg7": 296.5429,
+    "ridge": 297.0291,
+    "rf": 356.1315,
+    "rf_kalman": 340.6977
+  },
+  {
+    "date": "2024-12-22",
+    "actual": 255.55,
+    "persistence": 267.65,
+    "moving_avg7": 308.6657,
+    "ridge": 279.5959,
+    "rf": 351.4452,
+    "rf_kalman": 327.7565
+  },
+  {
+    "date": "2024-12-23",
+    "actual": 213.06,
+    "persistence": 435.29,
+    "moving_avg7": 335.6557,
+    "ridge": 332.558,
+    "rf": 268.9561,
+    "rf_kalman": 261.5143
+  },
+  {
+    "date": "2024-12-24",
+    "actual": 273.71,
+    "persistence": 255.55,
+    "moving_avg7": 328.8814,
+    "ridge": 278.2431,
+    "rf": 362.4177,
+    "rf_kalman": 368.6665
+  },
+  {
+    "date": "2024-12-25",
+    "actual": 290.86,
+    "persistence": 213.06,
+    "moving_avg7": 311.28,
+    "ridge": 251.3503,
+    "rf": 335.8495,
+    "rf_kalman": 337.9804
+  },
+  {
+    "date": "2024-12-26",
+    "actual": 342.33,
+    "persistence": 273.71,
+    "moving_avg7": 298.7957,
+    "ridge": 281.0165,
+    "rf": 336.6875,
+    "rf_kalman": 317.7696
+  },
+  {
+    "date": "2024-12-27",
+    "actual": 169.67,
+    "persistence": 290.86,
+    "moving_avg7": 291.7314,
+    "ridge": 266.49,
+    "rf": 279.7868,
+    "rf_kalman": 282.7829
+  },
+  {
+    "date": "2024-12-28",
+    "actual": 150.5,
+    "persistence": 342.33,
+    "moving_avg7": 296.9214,
+    "ridge": 291.0135,
+    "rf": 316.5477,
+    "rf_kalman": 324.9282
+  },
+  {
+    "date": "2024-12-29",
+    "actual": 201.9967,
+    "persistence": 169.67,
+    "moving_avg7": 282.9243,
+    "ridge": 217.6015,
+    "rf": 245.6046,
+    "rf_kalman": 290.7662
+  },
+  {
+    "date": "2025-01-01",
+    "actual": 339.3,
+    "persistence": 253.4933,
+    "moving_avg7": 240.3657,
+    "ridge": 250.2551,
+    "rf": 297.5641,
+    "rf_kalman": 295.3687
+  },
+  {
+    "date": "2025-01-02",
+    "actual": 545.82,
+    "persistence": 304.99,
+    "moving_avg7": 244.8343,
+    "ridge": 263.4551,
+    "rf": 300.4887,
+    "rf_kalman": 296.5272
+  },
+  {
+    "date": "2025-01-03",
+    "actual": 294.9,
+    "persistence": 339.3,
+    "moving_avg7": 251.7543,
+    "ridge": 275.019,
+    "rf": 293.4717,
+    "rf_kalman": 300.6174
+  },
+  {
+    "date": "2025-01-04",
+    "actual": 253.53,
+    "persistence": 545.82,
+    "moving_avg7": 280.8243,
+    "ridge": 351.4613,
+    "rf": 296.8266,
+    "rf_kalman": 300.8647
+  },
+  {
+    "date": "2025-01-05",
+    "actual": 239.3,
+    "persistence": 294.9,
+    "moving_avg7": 298.7143,
+    "ridge": 226.4449,
+    "rf": 254.863,
+    "rf_kalman": 272.3605
+  },
+  {
+    "date": "2025-01-06",
+    "actual": 169.67,
+    "persistence": 253.53,
+    "moving_avg7": 313.4329,
+    "ridge": 242.9657,
+    "rf": 281.855,
+    "rf_kalman": 273.3556
+  },
+  {
+    "date": "2025-01-07",
+    "actual": 194.9,
+    "persistence": 239.3,
+    "moving_avg7": 318.7619,
+    "ridge": 267.7053,
+    "rf": 314.5962,
+    "rf_kalman": 295.993
+  },
+  {
+    "date": "2025-01-08",
+    "actual": 350.4,
+    "persistence": 169.67,
+    "moving_avg7": 306.7871,
+    "ridge": 241.1774,
+    "rf": 245.741,
+    "rf_kalman": 323.713
+  },
+  {
+    "date": "2025-01-09",
+    "actual": 253.53,
+    "persistence": 194.9,
+    "moving_avg7": 291.06,
+    "ridge": 241.9596,
+    "rf": 249.3186,
+    "rf_kalman": 310.2346
+  },
+  {
+    "date": "2025-01-10",
+    "actual": 249.39,
+    "persistence": 350.4,
+    "moving_avg7": 292.6457,
+    "ridge": 302.204,
+    "rf": 299.5062,
+    "rf_kalman": 294.1387
+  },
+  {
+    "date": "2025-01-11",
+    "actual": 140.72,
+    "persistence": 253.53,
+    "moving_avg7": 250.89,
+    "ridge": 233.7498,
+    "rf": 254.7028,
+    "rf_kalman": 247.6963
+  },
+  {
+    "date": "2025-01-12",
+    "actual": 163.62,
+    "persistence": 249.39,
+    "moving_avg7": 244.3886,
+    "ridge": 211.5183,
+    "rf": 194.8743,
+    "rf_kalman": 191.1191
+  },
+  {
+    "date": "2025-01-13",
+    "actual": 176.74,
+    "persistence": 140.72,
+    "moving_avg7": 228.2729,
+    "ridge": 194.743,
+    "rf": 202.9741,
+    "rf_kalman": 201.5087
+  },
+  {
+    "date": "2025-01-14",
+    "actual": 301.96,
+    "persistence": 163.62,
+    "moving_avg7": 217.4614,
+    "ridge": 209.5464,
+    "rf": 222.5132,
+    "rf_kalman": 186.9303
+  },
+  {
+    "date": "2025-01-15",
+    "actual": 245.35,
+    "persistence": 176.74,
+    "moving_avg7": 218.4714,
+    "ridge": 216.2479,
+    "rf": 218.162,
+    "rf_kalman": 184.5261
+  },
+  {
+    "date": "2025-01-16",
+    "actual": 214.07,
+    "persistence": 301.96,
+    "moving_avg7": 233.7657,
+    "ridge": 257.4314,
+    "rf": 270.8853,
+    "rf_kalman": 270.117
+  },
+  {
+    "date": "2025-01-17",
+    "actual": 277.75,
+    "persistence": 245.35,
+    "moving_avg7": 218.7586,
+    "ridge": 224.1049,
+    "rf": 257.8251,
+    "rf_kalman": 266.1819
+  },
+  {
+    "date": "2025-01-18",
+    "actual": 283.8,
+    "persistence": 214.07,
+    "moving_avg7": 213.1214,
+    "ridge": 216.9114,
+    "rf": 262.8618,
+    "rf_kalman": 258.8714
+  },
+  {
+    "date": "2025-01-19",
+    "actual": 178.75,
+    "persistence": 277.75,
+    "moving_avg7": 217.1729,
+    "ridge": 239.4851,
+    "rf": 245.7051,
+    "rf_kalman": 253.7631
+  },
+  {
+    "date": "2025-01-20",
+    "actual": 140.72,
+    "persistence": 283.8,
+    "moving_avg7": 237.6129,
+    "ridge": 252.3389,
+    "rf": 243.5338,
+    "rf_kalman": 251.8071
+  },
+  {
+    "date": "2025-01-21",
+    "actual": 176.74,
+    "persistence": 178.75,
+    "moving_avg7": 239.7743,
+    "ridge": 206.5691,
+    "rf": 224.3739,
+    "rf_kalman": 252.1423
+  },
+  {
+    "date": "2025-01-22",
+    "actual": 138.78,
+    "persistence": 140.72,
+    "moving_avg7": 234.6286,
+    "ridge": 191.9131,
+    "rf": 205.0522,
+    "rf_kalman": 186.4328
+  },
+  {
+    "date": "2025-01-23",
+    "actual": 129.1,
+    "persistence": 176.74,
+    "moving_avg7": 216.74,
+    "ridge": 208.1719,
+    "rf": 214.7524,
+    "rf_kalman": 194.9137
+  },
+  {
+    "date": "2025-01-24",
+    "actual": 184.81,
+    "persistence": 138.78,
+    "moving_avg7": 201.5157,
+    "ridge": 201.7783,
+    "rf": 185.5028,
+    "rf_kalman": 183.2601
+  },
+  {
+    "date": "2025-01-25",
+    "actual": 198.94,
+    "persistence": 129.1,
+    "moving_avg7": 189.3771,
+    "ridge": 199.9724,
+    "rf": 204.7173,
+    "rf_kalman": 192.4149
+  },
+  {
+    "date": "2025-01-26",
+    "actual": 213.06,
+    "persistence": 184.81,
+    "moving_avg7": 176.1,
+    "ridge": 213.9443,
+    "rf": 216.3989,
+    "rf_kalman": 213.1121
+  },
+  {
+    "date": "2025-01-27",
+    "actual": 211.05,
+    "persistence": 198.94,
+    "moving_avg7": 163.9771,
+    "ridge": 208.1572,
+    "rf": 244.1318,
+    "rf_kalman": 231.8232
+  },
+  {
+    "date": "2025-01-28",
+    "actual": 218.11,
+    "persistence": 213.06,
+    "moving_avg7": 168.8786,
+    "ridge": 210.1298,
+    "rf": 250.7742,
+    "rf_kalman": 254.3407
+  },
+  {
+    "date": "2025-01-29",
+    "actual": 225.17,
+    "persistence": 211.05,
+    "moving_avg7": 178.9257,
+    "ridge": 193.1245,
+    "rf": 211.7081,
+    "rf_kalman": 206.6097
+  },
+  {
+    "date": "2025-01-30",
+    "actual": 223.15,
+    "persistence": 218.11,
+    "moving_avg7": 184.8357,
+    "ridge": 205.459,
+    "rf": 260.1786,
+    "rf_kalman": 262.1873
+  },
+  {
+    "date": "2025-01-31",
+    "actual": 221.14,
+    "persistence": 225.17,
+    "moving_avg7": 197.1771,
+    "ridge": 216.8057,
+    "rf": 259.7526,
+    "rf_kalman": 262.7471
+  },
+  {
+    "date": "2025-02-01",
+    "actual": 199.95,
+    "persistence": 223.15,
+    "moving_avg7": 210.6129,
+    "ridge": 196.4579,
+    "rf": 204.6224,
+    "rf_kalman": 193.9642
+  },
+  {
+    "date": "2025-02-02",
+    "actual": 174.72,
+    "persistence": 221.14,
+    "moving_avg7": 215.8029,
+    "ridge": 206.1101,
+    "rf": 258.0113,
+    "rf_kalman": 263.4698
+  },
+  {
+    "date": "2025-02-03",
+    "actual": 159.58,
+    "persistence": 199.95,
+    "moving_avg7": 215.9471,
+    "ridge": 209.1476,
+    "rf": 239.5135,
+    "rf_kalman": 249.9064
+  },
+  {
+    "date": "2025-02-04",
+    "actual": 191.87,
+    "persistence": 174.72,
+    "moving_avg7": 210.47,
+    "ridge": 198.5366,
+    "rf": 221.3063,
+    "rf_kalman": 201.1356
+  },
+  {
+    "date": "2025-02-05",
+    "actual": 210.04,
+    "persistence": 159.58,
+    "moving_avg7": 203.1171,
+    "ridge": 196.6887,
+    "rf": 211.2457,
+    "rf_kalman": 181.5482
+  },
+  {
+    "date": "2025-02-06",
+    "actual": 117.48,
+    "persistence": 191.87,
+    "moving_avg7": 199.3686,
+    "ridge": 204.7662,
+    "rf": 174.2093,
+    "rf_kalman": 177.691
+  },
+  {
+    "date": "2025-02-07",
+    "actual": 159.58,
+    "persistence": 210.04,
+    "moving_avg7": 197.2071,
+    "ridge": 219.7913,
+    "rf": 215.8102,
+    "rf_kalman": 203.9196
+  },
+  {
+    "date": "2025-02-08",
+    "actual": 220.13,
+    "persistence": 117.48,
+    "moving_avg7": 182.1114,
+    "ridge": 179.6867,
+    "rf": 186.8413,
+    "rf_kalman": 211.0174
+  },
+  {
+    "date": "2025-02-09",
+    "actual": 202.97,
+    "persistence": 159.58,
+    "moving_avg7": 173.3171,
+    "ridge": 193.4708,
+    "rf": 226.1379,
+    "rf_kalman": 222.1966
+  },
+  {
+    "date": "2025-02-10",
+    "actual": 202.97,
+    "persistence": 220.13,
+    "moving_avg7": 176.2,
+    "ridge": 203.0927,
+    "rf": 260.2176,
+    "rf_kalman": 255.3082
+  },
+  {
+    "date": "2025-02-11",
+    "actual": 63.25,
+    "persistence": 202.97,
+    "moving_avg7": 180.2357,
+    "ridge": 188.7771,
+    "rf": 196.9372,
+    "rf_kalman": 205.5217
+  },
+  {
+    "date": "2025-02-12",
+    "actual": 119.41,
+    "persistence": 202.97,
+    "moving_avg7": 186.4343,
+    "ridge": 192.2426,
+    "rf": 188.891,
+    "rf_kalman": 199.1167
+  },
+  {
+    "date": "2025-02-13",
+    "actual": 129.1,
+    "persistence": 63.25,
+    "moving_avg7": 168.06,
+    "ridge": 143.4138,
+    "rf": 127.6288,
+    "rf_kalman": 150.3278
+  },
+  {
+    "date": "2025-02-14",
+    "actual": 98.11,
+    "persistence": 119.41,
+    "moving_avg7": 155.1129,
+    "ridge": 164.5036,
+    "rf": 185.9454,
+    "rf_kalman": 182.6217
+  },
+  {
+    "date": "2025-02-15",
+    "actual": 173.71,
+    "persistence": 129.1,
+    "moving_avg7": 156.7729,
+    "ridge": 154.0802,
+    "rf": 150.5712,
+    "rf_kalman": 151.9787
+  },
+  {
+    "date": "2025-02-16",
+    "actual": 152.52,
+    "persistence": 98.11,
+    "moving_avg7": 147.9914,
+    "ridge": 145.7734,
+    "rf": 181.5288,
+    "rf_kalman": 187.4053
+  },
+  {
+    "date": "2025-02-17",
+    "actual": 222.15,
+    "persistence": 173.71,
+    "moving_avg7": 141.36,
+    "ridge": 171.0618,
+    "rf": 241.2334,
+    "rf_kalman": 234.0055
+  }
+]

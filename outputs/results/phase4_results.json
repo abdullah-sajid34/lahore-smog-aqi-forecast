@@ -39,7 +39,5 @@
     "f1_mean": 0.3945,
     "f1_std": 0.0084,
     "skill": 0.1948
-  },
-  "rf_delta_rmse_filtered_minus_raw": -0.2211,
-  "ridge_delta_rmse": -0.4723
+  }
 }
