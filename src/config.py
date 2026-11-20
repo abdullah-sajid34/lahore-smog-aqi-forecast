@@ -155,3 +155,48 @@ RF_PARAM_GRID = {
 
 # Walk-forward CV splits for tuning (TimeSeriesSplit)
 N_CV_SPLITS = 5
+# ---------------------------------------------------------------------------
+# Phase 6 — Advisory texts for each AQI category
+#
+# WHY these texts:
+#   Each advisory is a one-line, plain-English action recommendation.
+#   They mirror the guidance in the US AQI communication guide and
+#   Pakistan EPA alerts, calibrated for Lahore's population (a large fraction
+#   of outdoor workers and children).
+#
+# DISCLAIMER: added automatically by advise(); never omit it.
+# ---------------------------------------------------------------------------
+AQI_ADVISORY_DISCLAIMER = (
+    "Forecasts are informational only and not an official health advisory."
+)
+
+AQI_ADVISORY_TEXTS = {
+    "Good": (
+        "Air quality is satisfactory; enjoy outdoor activities."
+    ),
+    "Moderate": (
+        "Acceptable air quality; unusually sensitive individuals should limit "
+        "prolonged outdoor exertion."
+    ),
+    "Unhealthy for Sensitive": (
+        "Sensitive groups (children, elderly, respiratory patients) should "
+        "limit outdoor activity."
+    ),
+    "Unhealthy": (
+        "Limit outdoor activity; sensitive groups should stay indoors."
+    ),
+    "Very Unhealthy": (
+        "Avoid outdoor activity; everyone should reduce time spent outside."
+    ),
+    "Hazardous": (
+        "Health emergency — stay indoors, keep windows closed, use air "
+        "purifiers if available."
+    ),
+    "Hazardous+": (
+        "Extreme health emergency — do not go outside; seek clean indoor air "
+        "immediately."
+    ),
+}
+
+# Model file used by the agent (best model by validation RMSE)
+AGENT_MODEL_FILE = OUTPUTS_MODELS / "rf_h1.joblib"
