@@ -1,0 +1,78 @@
+@import "@fontsource/plus-jakarta-sans";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/plus-jakarta-sans/800.css";
+@import "@fontsource/jetbrains-mono";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ──────────────────────────────────────────────────── */
+html.dark  body { background-color: #0B1220; color: #E2E8F0; }
+html:not(.dark) body { background-color: #F7F9FC; color: #1E293B; }
+* { box-sizing: border-box; }
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(34,211,238,0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(34,211,238,0.45); }
+
+/* ── Glassmorphism card ────────────────────────────────────── */
+.glass {
+  background: rgba(17,26,46,0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(34,211,238,0.10);
+}
+html:not(.dark) .glass {
+  background: rgba(255,255,255,0.80);
+  border-color: rgba(34,211,238,0.18);
+}
+
+/* ── Shimmer skeleton ──────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.03) 25%,
+    rgba(255,255,255,0.08) 50%,
+    rgba(255,255,255,0.03) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* ── Keyboard focus states ─────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #22D3EE;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ── Light mode overrides ─────────────────────────────────── */
+html:not(.dark) .glass { color: #1E293B; }
+html:not(.dark) .text-slate-200 { color: #1E293B !important; }
+html:not(.dark) .text-slate-400 { color: #475569 !important; }
+html:not(.dark) .text-slate-500 { color: #64748B !important; }
+html:not(.dark) .text-white     { color: #111827 !important; }
+html:not(.dark) .border-white\/5 { border-color: rgba(0,0,0,0.08) !important; }
+
+/* ── Mobile: sidebar hides on < 640px ─────────────────────── */
+@media (max-width: 639px) {
+  aside { display: none !important; }
+}
+
+/* ── Reduced motion ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── ECharts canvas sizing ─────────────────────────────────── */
+.echarts-for-react { width: 100% !important; }
