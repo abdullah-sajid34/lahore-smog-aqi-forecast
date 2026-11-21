@@ -1,4 +1,4 @@
-﻿"""
+"""
 test_phase3.py -- pytest tests for forecasters, tuning, and evaluation.
 
 Correctness properties tested:

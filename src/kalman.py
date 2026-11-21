@@ -1,4 +1,4 @@
-﻿"""
+"""
 kalman.py -- Pure NumPy 1-D Kalman filter for PM2.5 smoothing.
 
 Model

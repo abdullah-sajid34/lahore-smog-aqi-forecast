@@ -1,4 +1,4 @@
-﻿"""
+"""
 main.py -- Console menu for the Lahore PM2.5 Forecast System.
 
 Usage:

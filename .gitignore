@@ -1,11 +1,50 @@
-﻿__pycache__/
+# Python
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
 .venv/
 venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node / Frontend
 node_modules/
 dist/
-.env
-.DS_Store
-.vscode/
+.npm/
 
+# Environment variables (never commit secrets)
+.env
+# .env.example IS committed (no secrets, just the key name)
+
+# Build / cache
 .pytest_cache/
+*.egg-info/
+build/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large model/data files (tracked individually by git-lfs or commited manually)
+# Keep these tracked:
+# data/raw/*.csv        -> tracked
+# data/processed/*.csv  -> tracked
+# outputs/results/*.json -> tracked
+# outputs/figures/*.png  -> tracked
+# outputs/models/*.joblib -> tracked (may be large; remove if LFS needed)
+
+# Temporary diagnostic scripts created during development
+_*.py
+pytest_output.txt

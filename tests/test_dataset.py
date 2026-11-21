@@ -1,4 +1,4 @@
-﻿"""
+"""
 test_dataset.py -- pytest tests for cleaning and feature engineering.
 
 Tests are designed around correctness properties:

@@ -1,4 +1,4 @@
-﻿"""
+"""
 agent.py -- ForecastAgent for the Lahore PM2.5 console system.
 
 The agent is a classic perception-decision loop:

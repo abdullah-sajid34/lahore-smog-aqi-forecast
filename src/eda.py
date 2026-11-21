@@ -1,4 +1,4 @@
-﻿"""
+"""
 eda.py -- Exploratory Data Analysis for the Lahore Smog project.
 
 All analysis uses only data/processed/lahore_merged.csv (the cleaned,

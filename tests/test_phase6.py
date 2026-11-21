@@ -1,4 +1,4 @@
-﻿"""
+"""
 test_phase6.py -- pytest tests for Phase 6 (environment, agent, main helpers).
 
 Tests cover:

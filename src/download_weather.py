@@ -1,4 +1,4 @@
-﻿"""
+"""
 download_weather.py -- fetch Open-Meteo historical weather for Lahore.
 
 Open-Meteo provides free historical weather data with no API key required.

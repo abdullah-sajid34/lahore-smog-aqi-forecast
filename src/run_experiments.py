@@ -1,4 +1,4 @@
-﻿"""
+"""
 run_experiments.py -- Single entry-point that reproduces the full pipeline.
 
 Usage:

@@ -1,4 +1,4 @@
-﻿"""
+"""
 test_evaluator.py -- pytest tests for src/evaluator.py and JSON outputs.
 
 Tests cover:

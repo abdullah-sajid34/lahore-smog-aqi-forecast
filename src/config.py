@@ -1,4 +1,4 @@
-﻿"""
+"""
 config.py -- central configuration for the Lahore Smog project.
 
 All paths, constants, and feature lists live here so every other module

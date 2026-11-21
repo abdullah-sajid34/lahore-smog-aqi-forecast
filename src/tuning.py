@@ -1,4 +1,4 @@
-﻿"""
+"""
 tuning.py -- Hyperparameter tuning for Ridge and RandomForest forecasters.
 
 RULES (enforced by code, not just comments):

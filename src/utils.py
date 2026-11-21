@@ -1,4 +1,4 @@
-﻿"""
+"""
 utils.py -- shared utility helpers.
 
 Keeping set_seed() here (rather than in config.py) separates *values*

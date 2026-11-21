@@ -1,4 +1,4 @@
-﻿"""
+"""
 forecasters.py -- Forecaster hierarchy for Lahore PM2.5 prediction.
 
 All models predict PM2.5 (ug/m3) at t+horizon given information

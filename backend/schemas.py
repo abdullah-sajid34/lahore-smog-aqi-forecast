@@ -1,4 +1,4 @@
-﻿"""
+"""
 schemas.py -- Pydantic response models for every API endpoint.
 
 WHY Pydantic:

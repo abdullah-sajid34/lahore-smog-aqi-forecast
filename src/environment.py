@@ -1,4 +1,4 @@
-﻿"""
+"""
 environment.py -- AirQualityEnvironment for the Lahore PM2.5 agent.
 
 Design

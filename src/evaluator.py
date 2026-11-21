@@ -1,4 +1,4 @@
-﻿"""
+"""
 evaluator.py -- Reusable metrics and plots for the Lahore PM2.5 project.
 
 All metric functions accept plain NumPy arrays so they can be used

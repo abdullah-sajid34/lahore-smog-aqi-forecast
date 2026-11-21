@@ -1,4 +1,4 @@
-﻿"""
+"""
 dataset.py -- AirQualityDataset: load, clean, feature-engineer, split.
 
 The class is the single source of truth for data preparation.  All other

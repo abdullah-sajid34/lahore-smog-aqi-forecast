@@ -1,4 +1,4 @@
-﻿"""
+"""
 test_kalman.py -- pytest tests for KalmanFilter1D and related helpers.
 
 Correctness properties tested

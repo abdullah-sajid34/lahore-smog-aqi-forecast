@@ -1,4 +1,4 @@
-﻿"""
+"""
 run_phase3.py -- Full Phase 3 evaluation pipeline.
 
 Workflow

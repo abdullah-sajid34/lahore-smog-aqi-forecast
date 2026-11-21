@@ -1,4 +1,4 @@
-﻿"""
+"""
 test_eda.py -- pytest tests for EDA functions.
 
 All tests run on a small synthetic DataFrame so they execute fast,

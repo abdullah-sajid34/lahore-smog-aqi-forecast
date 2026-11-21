@@ -1,4 +1,4 @@
-﻿"""
+"""
 services.py -- All business logic for the API, loaded once at startup.
 
 WHY load everything once:

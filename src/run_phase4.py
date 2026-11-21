@@ -1,4 +1,4 @@
-﻿"""
+"""
 run_phase4.py -- Kalman filter experiment: raw vs filtered PM2.5 as input.
 
 Experiment design
