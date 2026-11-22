@@ -7,6 +7,8 @@ WHY load everything once:
   means every request reads from in-memory objects -- sub-millisecond
   vs ~300 ms for cold load.
 
+  
+
 Missing-file strategy:
   At startup we scan for all required files.  Any that are absent are
   listed in AppState.missing_files.  Endpoints that need a missing file
@@ -46,7 +48,7 @@ import joblib
 
 
 # ---------------------------------------------------------------------------
-# File manifest -- every file the API depends on
+# File manifest -- every file the API depends on and i am contibuting
 # ---------------------------------------------------------------------------
 
 REQUIRED_RESULTS = [
@@ -65,7 +67,7 @@ REQUIRED_MODELS = ["rf_h1.joblib", "ridge_h1.joblib"]
 
 
 # ---------------------------------------------------------------------------
-# AppState  (populated once at startup)
+# AppState  (populated once at startup) verified
 # ---------------------------------------------------------------------------
 
 @dataclass
@@ -88,7 +90,7 @@ class AppState:
     df_index_set:   set              = field(default_factory=set)
     test_rmse:      float            = 68.4641   # persistence baseline, fallback
 
-
+ # verified the load_json file
 def _load_json(path: Path) -> Any:
     with open(path, encoding="utf-8") as f:
         return json.load(f)
