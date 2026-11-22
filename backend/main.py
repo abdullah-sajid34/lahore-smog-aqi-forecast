@@ -5,13 +5,15 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.schemas import (
-    AboutResponse, EdaResponse, ForecastResponse, HealthResponse,
+    AboutResponse,     EdaResponse, ForecastResponse, HealthResponse,
     KalmanResponse, KpisResponse, ModelsResponse, SeriesResponse, TodayResponse,
+    
 )
 from backend.services import (
     AppState, build_app_state,
     svc_about, svc_eda, svc_forecast, svc_health, svc_kalman,
     svc_kpis, svc_models, svc_series, svc_today,
+
 )
 
 
@@ -22,12 +24,14 @@ async def lifespan(app: FastAPI):
     yield
 
 
+
 app = FastAPI(
     title="Lahore PM2.5 AQI Forecast API",
     description="REST API for the Lahore Smog Analysis and AQI Forecast project.",
     version="1.0.0",
     lifespan=lifespan,
 )
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -44,7 +48,10 @@ app.add_middleware(
 
 
 def _state() -> AppState:
+
     return app.state.ctx
+
+
 
 
 @app.get("/api/health", response_model=HealthResponse, tags=["System"])
@@ -55,6 +62,7 @@ def health():
 
 @app.get("/api/kpis", response_model=KpisResponse, tags=["Data"])
 def kpis():
+    
     """Annual means, peak date, best model RMSE, split sizes."""
     return svc_kpis(_state())
 
